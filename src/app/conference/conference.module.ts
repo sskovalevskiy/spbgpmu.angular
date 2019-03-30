@@ -10,6 +10,6 @@ import { ConferenceComponent } from './conference.component';
     CommonModule,
     ConferenceRoutingModule
   ],
-  exports: []
+  exports: [ConferenceComponent]
 })
 export class ConferenceModule { }
