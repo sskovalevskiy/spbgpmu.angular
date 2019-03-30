@@ -10846,7 +10846,7 @@ html::-webkit-scrollbar-track {
   line-height: 36px;
   font-weight: 300;
   text-align: center;
-  max-width: 900px;
+  /*max-width: 900px;*/
   margin: 0 auto 64px
 }
 
