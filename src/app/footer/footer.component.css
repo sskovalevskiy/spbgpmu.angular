@@ -1,0 +1,150 @@
+.footer {
+  color: #7f7f7f;
+  font-size: 13px;
+  margin-top: auto
+}
+
+.footer h5 {
+  margin: 3rem 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.footer-copy {
+  text-align: center;
+  padding: 22px 0
+}
+
+.footer-copy .love {
+  color: #fc328a
+}
+
+@media (min-width: 768px) {
+  .footer-copy p {
+    width: 50%;
+    float: left;
+  }
+
+  .footer-copy p:first-child {
+    text-align: left;
+  }
+
+  .footer-copy p:last-child {
+    text-align: right;
+  }
+}
+
+.footer-info {
+  padding: 20px 0;
+  border-top: 1px solid #343134;
+}
+
+@media (min-width: 768px) {
+  .footer-info {
+    padding: 58px 0 52px
+  }
+}
+
+.footer-info a, .footer-copy a {
+  color: #7f7f7f
+}
+
+.footer-info a:hover, .footer-copy a:hover {
+  color: #fc328a;
+  text-decoration: none
+}
+
+.footer-info p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 26px
+}
+
+.footer-info p:last-child {
+  padding-bottom: 0
+}
+
+.footer-info h6 {
+  text-transform: uppercase;
+  margin: 0 0 15px;
+  padding: 0
+}
+
+.footer-info-row {
+  margin-right: -30px;
+  margin-left: -30px
+}
+
+.footer-info-block {
+  border-top: 1px solid #d8e3eb;
+  padding: 30px
+}
+
+.footer-info-block:first-child {
+  border-top: none
+}
+
+@media (min-width: 576px) {
+  .footer-info-block:nth-child(2) {
+    border-top: none
+  }
+
+  .footer-info-block:nth-child(even) {
+    border-left: 1px solid #d8e3eb
+  }
+
+  .footer-info-block:nth-child(odd) {
+    border-left: none
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-info-block {
+    border-top: none;
+    border-left: 1px solid #d8e3eb;
+    padding: 0 30px
+  }
+
+  .footer-info-block:nth-child(even), .footer-info-block:nth-child(odd) {
+    border-left: 1px solid #d8e3eb
+  }
+
+  .footer-info-block:first-child {
+    border-left: none
+  }
+}
+
+.footer-links {
+  margin: 0;
+  padding: 0;
+  list-style: none
+}
+
+.footer-links a {
+  font-size: 14px;
+  line-height: 24px
+}
+
+.footer-social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 16px
+}
+
+.footer-social-links li {
+  margin-right: 24px
+}
+
+.footer-social-links li a {
+  font-size: 24px;
+  color: #909090
+}
+
+.footer-social-links li a:hover {
+  color: #fc328a;
+  text-decoration: none
+}
