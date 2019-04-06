@@ -11217,7 +11217,8 @@ html::-webkit-scrollbar-track {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
-    flex-direction: row
+    flex-direction: row;
+    margin-top: 50px;
   }
 }
 
