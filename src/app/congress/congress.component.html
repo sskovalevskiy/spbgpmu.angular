@@ -3,31 +3,36 @@
     <ul class="social-links">
       <!-- Facebook -->
       <li>
-        <a href="" class="fa fa-facebook" data-toggle="tooltip" data-placement="top" i18n-title
+        <a href="https://www.facebook.com/news.gpmu" target="_blank" class="fa fa-facebook" data-toggle="tooltip"
+           data-placement="top" i18n-title
            title="Мы в Facebook"></a>
       </li>
 
       <!-- VKontakte -->
       <li>
-        <a href="" class="fa fa-vk" data-toggle="tooltip" data-placement="top" i18n-title
+        <a href="https://vk.com/news.gpmu" target="_blank" class="fa fa-vk" data-toggle="tooltip" data-placement="top"
+           i18n-title
            title="Мы в ВКонтакте"></a>
       </li>
 
       <!-- Instagram -->
       <li>
-        <a href="" class="fa fa-instagram" data-toggle="tooltip" data-placement="top" i18n-title
+        <a href="https://www.instagram.com/spbgpmu/" target="_blank" class="fa fa-instagram" data-toggle="tooltip"
+           data-placement="top" i18n-title
            title="Мы в Instagram"></a>
       </li>
 
       <!-- Youtube -->
       <li>
-        <a href="" class="fa fa-youtube" data-toggle="tooltip" data-placement="top" i18n-title
+        <a href="https://www.youtube.com/channel/UCjPg7vzECT5JKlgYTk5NfXg" target="_blank" class="fa fa-youtube"
+           data-toggle="tooltip" data-placement="top" i18n-title
            title="Наш канал в Youtube"></a>
       </li>
 
       <!-- Email -->
       <li>
-        <a href="" class="fa fa-envelope-o" data-toggle="tooltip" data-placement="top" i18n-title
+        <a href="https://mail.yandex.ru/compose?mailto=press@gpma.ru" target="_blank" class="fa fa-envelope-o" data-toggle="tooltip"
+           data-placement="top" i18n-title
            title="Напишите нам"></a>
       </li>
     </ul>
@@ -49,11 +54,11 @@
     <div class="collapse navbar-collapse" id="bconfNav">
       <i class="fa fa-times close-navbar-mobile" aria-hidden="true" data-toggle="collapse" data-target="#bconfNav"></i>
       <ul class="navbar-nav ml-auto">
-        <li><a href="" data-scroll-nav="1" class="nav-link" i18n>О конгрессе</a></li>
-        <li><a href="" data-scroll-nav="2" class="nav-link" i18n>Спикеры</a></li>
-        <li><a href="" data-scroll-nav="3" class="nav-link" i18n>Программа</a></li>
-        <li><a href="" data-scroll-nav="4" class="nav-link" i18n>Место проведения</a></li>
-        <li><a href="" data-scroll-nav="5" class="nav-link" i18n>Cпонсоры</a></li>
+        <li><a href="#about" data-scroll-nav="1" class="nav-link" i18n>О конгрессе</a></li>
+        <li><a href="#speakers" data-scroll-nav="2" class="nav-link" i18n>Спикеры</a></li>
+        <li><a href="#schedule" data-scroll-nav="3" class="nav-link" i18n>Программа</a></li>
+        <li><a href="#location" data-scroll-nav="4" class="nav-link" i18n>Место проведения</a></li>
+        <li><a href="#sponsors" data-scroll-nav="5" class="nav-link" i18n>Cпонсоры</a></li>
         <li><a href="" target="_blank" class="nav-link" id="buyTicketsLink" i18n>Зарегистрироваться</a></li>
       </ul>
     </div>
@@ -79,7 +84,7 @@
 </section>
 
 
-<section data-scroll-index="1" class="content-block about bordered">
+<section id="about" data-scroll-index="1" class="content-block about bordered">
   <div class="container">
     <h2 data-aos="zoom-in-up" i18n>Крупнейшая национальная конференция по педиатрии, перинатологии и неонатологии</h2>
 
@@ -94,8 +99,8 @@
         <div class="metrics-content">
           <div class="metrics-num">29-31<span i18n> Мая</span></div>
           <div class="metrics-info" i18n>Симпозиумы, клинические разборы и мастер-классы по педиатрии, неонатологии,
-            детской хирургии, акушерству и гинекологии, анестезиологии-реаниматологии,
-            экспериментальной хирургии, лучевой диагностике и др. специальностям
+            детской хирургии, акушерству и гинекологии, анестезиологии-реаниматологии, экспериментальной хирургии,
+            лучевой диагностике и др. специальностям
           </div>
         </div>
       </div>
@@ -131,7 +136,7 @@
   </div>
 </section>
 
-<section data-scroll-index="2" class="content-block speakers">
+<section id="speakers" data-scroll-index="2" class="content-block speakers">
   <div class="container">
     <h2 data-aos="zoom-in-up" i18n>Ключевые спикеры</h2>
   </div>
@@ -242,9 +247,9 @@
   </div>
 </section>
 
-<app-schedule></app-schedule>
+<app-schedule id="schedule"></app-schedule>
 
-<section data-scroll-index="4" class="content-block location bg-darken">
+<section id="location" data-scroll-index="4" class="content-block location bg-darken">
   <div class="container">
     <h2 data-aos="zoom-in-up" i18n>Место проведения</h2>
 
@@ -268,7 +273,7 @@
   </div>
 </section>
 
-<section data-scroll-index="5" class="content-block sponsors">
+<section id="sponsors" data-scroll-index="5" class="content-block sponsors">
   <div class="container">
     <h2 data-aos="zoom-in-up" i18n>Информационные партнеры и спонсоры</h2>
 
