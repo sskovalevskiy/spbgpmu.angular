@@ -11142,7 +11142,7 @@ html::-webkit-scrollbar-track {
   position: relative;
   background-size: cover;
   background-attachment: scroll;
-  background-image: url(./assets/img/home.jpg);
+  background-image: url(https://pp.userapi.com/c852128/v852128825/f318f/ckQELRDeNr8.jpg);
   background-position: center center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11265,7 +11265,7 @@ html::-webkit-scrollbar-track {
 }
 
 .bconf .metrics-item .metrics-info {
-  font-size: 21px;
+  font-size: 16px;
   font-weight: 300
 }
 
