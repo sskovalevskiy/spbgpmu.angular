@@ -1,3 +1,9 @@
+Project is available on:
+* https://sskovalevskiy.github.io/spbgpmu.angular/
+* https://stackblitz.com/github/sskovalevskiy/spbgpmu.angular
+
+Short docs about stackblitz on https://habr.com/ru/post/349322/
+
 # Gpmu
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.7.
