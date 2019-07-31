@@ -7,9 +7,10 @@ import { ScheduleComponent } from './schedule/schedule.component';
 import { SpeakersComponent } from './speakers/speakers.component';
 import { LocationComponent } from './location/location.component';
 import { SponsorsComponent } from './sponsors/sponsors.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
-  declarations: [CongressComponent, ScheduleComponent, SpeakersComponent, LocationComponent, SponsorsComponent],
+  declarations: [CongressComponent, ScheduleComponent, SpeakersComponent, LocationComponent, SponsorsComponent, AboutComponent],
   imports: [
     CommonModule,
     CongressRoutingModule
