@@ -8,9 +8,10 @@ import { SpeakersComponent } from './speakers/speakers.component';
 import { LocationComponent } from './location/location.component';
 import { SponsorsComponent } from './sponsors/sponsors.component';
 import { AboutComponent } from './about/about.component';
+import { NewsletterComponent } from './newsletter/newsletter.component';
 
 @NgModule({
-  declarations: [CongressComponent, ScheduleComponent, SpeakersComponent, LocationComponent, SponsorsComponent, AboutComponent],
+  declarations: [CongressComponent, ScheduleComponent, SpeakersComponent, LocationComponent, SponsorsComponent, AboutComponent, NewsletterComponent],
   imports: [
     CommonModule,
     CongressRoutingModule
