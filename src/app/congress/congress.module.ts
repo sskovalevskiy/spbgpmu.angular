@@ -10,9 +10,10 @@ import { SponsorsComponent } from './sponsors/sponsors.component';
 import { AboutComponent } from './about/about.component';
 import { NewsletterComponent } from './newsletter/newsletter.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { HeadlineComponent } from './headline/headline.component';
 
 @NgModule({
-  declarations: [CongressComponent, ScheduleComponent, SpeakersComponent, LocationComponent, SponsorsComponent, AboutComponent, NewsletterComponent, NavigationComponent],
+  declarations: [CongressComponent, ScheduleComponent, SpeakersComponent, LocationComponent, SponsorsComponent, AboutComponent, NewsletterComponent, NavigationComponent, HeadlineComponent],
   imports: [
     CommonModule,
     CongressRoutingModule
