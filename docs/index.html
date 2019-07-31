@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>Gpmu</title>
-  <base href="/spbgpmu.angular/">
+  <base href="/">
+
   <meta name="viewport" content='width=device-width, initial-scale=1, width=device-width'>
   <meta name="description" content="Responsive template for event or conference">
   <meta name="keywords" content="event, conference, summit, business, website, template, parallax">
@@ -16,11 +17,22 @@
   <link rel="shortcut icon" href="img/favicon.ico">
 
   <script src="./assets/js/scripts.min.js"></script>
-<link rel="stylesheet" href="styles.a27367895d648ffd6fb7.css"></head>
+  <script src="https://vk.com/js/api/openapi.js?160" type="text/javascript"></script>
+<link rel="stylesheet" href="styles.35200f286c91a7b5eecc.css"></head>
 <body class="bconf">
-  <app-root></app-root>
+<app-root></app-root>
 
-  <!-- change "key=AI..." to your own google map api key: https://developers.google.com/maps/documentation/javascript/get-api-key -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaOKD6sMmEuZSodbKqmCzIrfosLRaXmr8"></script>
-<script type="text/javascript" src="runtime.26209474bfa8dc87a77c.js"></script><script type="text/javascript" src="es2015-polyfills.c5dd28b362270c767b34.js" nomodule></script><script type="text/javascript" src="polyfills.8bbb231b43165d65d357.js"></script><script type="text/javascript" src="main.8fcd9891ffd5ade98e26.js"></script></body>
+
+<div id="vk_community_messages"></div>
+<script type="text/javascript">
+  VK.Widgets.CommunityMessages("vk_community_messages", 172732339, {
+    disableExpandChatSound: "1",
+    disableButtonTooltip: "1",
+    welcomeScreen: "1"
+  });
+</script>
+
+<!-- change "key=AI..." to your own google map api key: https://developers.google.com/maps/documentation/javascript/get-api-key -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaOKD6sMmEuZSodbKqmCzIrfosLRaXmr8"></script>
+<script type="text/javascript" src="runtime.26209474bfa8dc87a77c.js"></script><script type="text/javascript" src="es2015-polyfills.c5dd28b362270c767b34.js" nomodule></script><script type="text/javascript" src="polyfills.8bbb231b43165d65d357.js"></script><script type="text/javascript" src="main.9ab2240e5ba613b11539.js"></script></body>
 </html>
