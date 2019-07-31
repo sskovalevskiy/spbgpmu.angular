@@ -9,9 +9,10 @@ import { LocationComponent } from './location/location.component';
 import { SponsorsComponent } from './sponsors/sponsors.component';
 import { AboutComponent } from './about/about.component';
 import { NewsletterComponent } from './newsletter/newsletter.component';
+import { NavigationComponent } from './navigation/navigation.component';
 
 @NgModule({
-  declarations: [CongressComponent, ScheduleComponent, SpeakersComponent, LocationComponent, SponsorsComponent, AboutComponent, NewsletterComponent],
+  declarations: [CongressComponent, ScheduleComponent, SpeakersComponent, LocationComponent, SponsorsComponent, AboutComponent, NewsletterComponent, NavigationComponent],
   imports: [
     CommonModule,
     CongressRoutingModule
