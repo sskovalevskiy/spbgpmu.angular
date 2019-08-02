@@ -7,6 +7,9 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { FooterComponent } from './footer/footer.component';
 import { BookStoreComponent } from './book-store/book-store.component';
 import { HeaderComponent } from './book-store/header/header.component';
+import { AdBannerComponent } from './book-store/main/ad-banner/ad-banner.component';
+import { ContentComponent } from './book-store/main/content/content.component';
+import { MainComponent } from './book-store/main/main.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { HeaderComponent } from './book-store/header/header.component';
     NotFoundComponent,
     FooterComponent,
     BookStoreComponent,
-    HeaderComponent
+    HeaderComponent,
+    AdBannerComponent,
+    ContentComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
