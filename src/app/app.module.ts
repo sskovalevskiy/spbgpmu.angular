@@ -8,8 +8,11 @@ import { FooterComponent } from './footer/footer.component';
 import { BookStoreComponent } from './book-store/book-store.component';
 import { HeaderComponent } from './book-store/header/header.component';
 import { AdBannerComponent } from './book-store/main/ad-banner/ad-banner.component';
-import { ContentComponent } from './book-store/main/content/content.component';
 import { MainComponent } from './book-store/main/main.component';
+import { WelcomeComponent } from './book-store/main/welcome/welcome.component';
+import { NewArrivalComponent } from './book-store/main/new-arrival/new-arrival.component';
+import { BookstoreBestsellersComponent } from './book-store/main/bookstore-bestsellers/bookstore-bestsellers.component';
+import { BookstoreSearchFormComponent } from './book-store/main/bookstore-search-form/bookstore-search-form.component';
 
 @NgModule({
   declarations: [
@@ -19,8 +22,11 @@ import { MainComponent } from './book-store/main/main.component';
     BookStoreComponent,
     HeaderComponent,
     AdBannerComponent,
-    ContentComponent,
-    MainComponent
+    MainComponent,
+    WelcomeComponent,
+    NewArrivalComponent,
+    BookstoreBestsellersComponent,
+    BookstoreSearchFormComponent
   ],
   imports: [
     BrowserModule,
