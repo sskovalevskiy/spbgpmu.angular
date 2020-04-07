@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { FooterComponent } from './footer/footer.component';
 import { NewsComponent } from './news/news.component';
+import {NewsModule} from './news/news.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { NewsComponent } from './news/news.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NewsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
