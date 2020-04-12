@@ -4,12 +4,12 @@ import {Author} from './author.model';
 export class Article {
 
   constructor(public id: number,
-              public title: string,
+              public headline: string,
               public articleLink: string,
               public articleBackgroundImageLink: string,
-              public articlePublishDate: string,
-              public articleLastUpdateDate: string,
-              public category: Category,
+              public datePublished: string,
+              public dateModified: string,
+              public tag: Category,
               public author: Author,
               public articleText?: string
               ) {

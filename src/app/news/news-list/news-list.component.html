@@ -29,10 +29,10 @@
               </div>
               <div class="post-info">
                 <div *ngIf="i>2" class="separator"></div>
-                <h2 *ngIf="i==0"><a href="http://157.230.217.118:3001/{{article.articleLink}}/">{{article.title}}</a></h2>
-                <h3 *ngIf="i>1"><a href="http://157.230.217.118:3001/{{article.articleLink}}/">{{article.title}}</a></h3>
+                <h2 *ngIf="i==0"><a href="http://157.230.217.118:3001/{{article.articleLink}}/">{{article.headline}}</a></h2>
+                <h3 *ngIf="i>1"><a href="http://157.230.217.118:3001/{{article.articleLink}}/">{{article.headline}}</a></h3>
                 <div class="post-tags">
-                  <a href="http://157.230.217.118:3001/tag/getting-started/">{{article.category.title}}</a>
+                  <a href="http://157.230.217.118:3001/tag/getting-started/">{{article.tag.title}}</a>
                 </div>
                 <div *ngIf="i==0" class="separator"></div>
                 <div *ngIf="i==0; then templateName">
@@ -49,9 +49,9 @@
             </ng-template>
 
             <ng-template #elseTemplate>
-              <h3><a href="http://157.230.217.118:3001/a-peak-into-scandinavias-origin/">{{article.title}}</a></h3>
+              <h3><a href="http://157.230.217.118:3001/a-peak-into-scandinavias-origin/">{{article.headline}}</a></h3>
               <div class="post-tags">
-                <a href="http://157.230.217.118:3001/tag/history/">{{article.category.title}}</a>
+                <a href="http://157.230.217.118:3001/tag/history/">{{article.tag.title}}</a>
               </div>
               <div class="share-icons">
                 <div class="icon-container">
