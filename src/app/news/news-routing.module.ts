@@ -5,15 +5,17 @@ import {CategoriesComponent} from './categories/categories.component';
 
 const routes: Routes = [
   {
-    path: 'news', component: NewsListComponent, children: [
-      { path: 'categories', component: CategoriesComponent },
-      { path: 'tag/:category', redirectTo: '/'  },
-      { path: 'authors', redirectTo: '/' },
+    path: 'news', children: [
+      { path: '', component: NewsListComponent },
+      { path: 'news/:id', component: NewsListComponent }
+    ]
+  },
+  { path: 'categories', component: CategoriesComponent },
+  { path: 'tag/:category', component: CategoriesComponent },
+  { path: 'authors', children: [
+      { path: 'authors/:name', redirectTo: '/authors' }
     ]
   }
-
-,
-
 ];
 
 @NgModule({
