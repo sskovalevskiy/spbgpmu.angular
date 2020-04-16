@@ -4,7 +4,7 @@ import {NewsListComponent} from './news-list/news-list.component';
 import {LatestPostComponent} from './latest-post/latest-post.component';
 import {PaginationComponent} from './pagination/pagination.component';
 import {NewsCarouselComponent} from './news-carousel/news-carousel.component';
-import { CategoriesComponent } from './categories/categories.component';
+import {CategoriesComponent} from './categories/categories.component';
 import {ArticleComponent} from './article/article.component';
 import {NewsRoutingModule} from './news-routing.module';
 
@@ -17,9 +17,10 @@ import {NewsRoutingModule} from './news-routing.module';
     CategoriesComponent,
     ArticleComponent
   ],
-   imports: [
+  imports: [
     CommonModule,
     NewsRoutingModule
   ]
 })
-export class NewsModule { }
+export class NewsModule {
+}
