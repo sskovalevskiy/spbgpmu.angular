@@ -2,7 +2,7 @@ export class Category {
   constructor(public id: number,
               public title: string,
               public description: string,
-              public url: string
-  ) {
+              public url: string,
+              public backgroundImageURL: string) {
   }
 }
