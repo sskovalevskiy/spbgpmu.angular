@@ -9,7 +9,7 @@ export class Article {
               public articleBackgroundImageLink: string,
               public datePublished: string,
               public dateModified: string,
-              public tag: Category,
+              public categoryId: number,
               public author: Author,
               public articleText?: string
               ) {
