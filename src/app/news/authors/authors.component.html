@@ -17,12 +17,11 @@
 <div id="main">
   <div class="container">
     <div class="row">
-      <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+      <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12"
+      *ngFor="let author of authors$ | async">
         <div class="author-widget post-presentation">
           <div class="author-cover lazy background"
-               data-src="http://157.230.217.118:3001/content/images/2018/09/michal-parzuchowski-324218-unsplash-min.jpg"
-               data-was-processed="true"
-               style="background-image: url(&quot;http://157.230.217.118:3001/content/images/2018/09/michal-parzuchowski-324218-unsplash-min.jpg&quot;);">
+               [ngStyle]="{ 'background-image': 'url(' + author.backgroundImageURL + ')'}">
             <div class="gradient gradient1">
               <div class="share-icons icons-visible animated fadeIn">
                 <div class="icon-container">
@@ -30,44 +29,16 @@
                 </div>
               </div>
               <div class="author-image background lazy"
-                   style="background-image: url(&quot;http://157.230.217.118:3001/content/images/2018/09/10258553_490703191059311_1426632935227693623_o-min.jpg&quot;);"></div>
-              <h2><a href="http://157.230.217.118:3001/author/diego/">Diego Balmaceda</a></h2>
-            </div>
-          </div>
-          <div class="author-additional-info">
-            <p><i class="fa fa-map-marker"></i> Managua, Nicaragua</p>
-          </div>
-          <div class="author-body">
-            <p>System Engineering student. 19 years old. I love open source projects, coffee, Age of Empires... Did I
-              say coffee already?</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-        <div class="author-widget post-presentation">
-          <div class="author-cover lazy background"
-               style="background-image: url(&quot;http://157.230.217.118:3001/content/images/2018/09/thanos-pal-570889-unsplash-min-2.jpg&quot;);">
-            <div class="gradient gradient1">
-              <div class="share-icons icons-visible animated fadeIn">
-                <div class="icon-container">
-                  <div class="icons">
-                    <a href="https://ghost.org/"><i class="fa fa-globe"></i></a>
-                    <a href="https://www.facebook.com/ghost"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://twitter.com/tryghost"><i class="fab fa-twitter"></i></a>
-                  </div>
-                </div>
+                   [ngStyle]="{ 'background-image': 'url(' + author.photoURL + ')'}">
               </div>
-              <div class="author-image background lazy"
-                   style="background-image: url(&quot;http://157.230.217.118:3001/content/images/2018/09/Jason-Davis-headshot-min.jpg&quot;);"></div>
-              <h2><a href="http://157.230.217.118:3001/author/johndoe/">John Doe</a></h2>
+              <h2><a href="http://157.230.217.118:3001/author/diego/">{{author.name}}</a></h2>
             </div>
           </div>
           <div class="author-additional-info">
-            <p><i class="fa fa-map-marker"></i> Iceland</p>
+            <p><i class="fa fa-map-marker"></i>{{author.city}}</p>
           </div>
           <div class="author-body">
-            <p>Ghost is a fully open source, adaptable platform for building and running a modern online
-              publication.</p>
+            <p>{{author.additionalInfo}}</p>
           </div>
         </div>
       </div>
