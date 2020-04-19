@@ -35,7 +35,7 @@
                 <h2 *ngIf="i==0"><a href="http://157.230.217.118:3001/{{article.articleLink}}/">{{article.headline}}</a></h2>
                 <h3 *ngIf="i>1"><a href="http://157.230.217.118:3001/{{article.articleLink}}/">{{article.headline}}</a></h3>
                 <div class="post-tags">
-                  <a href="http://157.230.217.118:3001/tag/getting-started/">{{article.tag.title}}</a>
+                  <a href="http://157.230.217.118:3001/tag/getting-started/">{{getCategoryById(article.categoryId).title}}</a>
                 </div>
                 <div *ngIf="i==0" class="separator"></div>
                 <div *ngIf="i==0; then templateName">
@@ -54,7 +54,7 @@
             <ng-template #elseTemplate>
               <h3><a href="http://157.230.217.118:3001/a-peak-into-scandinavias-origin/">{{article.headline}}</a></h3>
               <div class="post-tags">
-                <a href="http://157.230.217.118:3001/tag/history/">{{article.tag.title}}</a>
+                <a href="http://157.230.217.118:3001/tag/history/">{{getCategoryById(article.categoryId).title}}</a>
               </div>
               <div class="share-icons">
                 <div class="icon-container">
