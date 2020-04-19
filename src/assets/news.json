@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "headline": "Thor, the Nordic God",
+    "articleBackgroundImageLink": "https://images.unsplash.com/photo-1519125478587-9e2e97231d2c?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ&amp;s=f555c229fd7926ccd7b3c41a288a2f54",
+    "datePublished": 1009855224,
+    "dateModified": 1014952824,
+    "categoryId": 1,
+    "authorId": 1,
+    "articleText": "Thor is a prominently mentioned god throughout the recorded history of the Germanic peoples, from the Roman occupation of regions of Germania, to the tribal expansions of the Migration Period..."
+  },
+  {
+    "id": 2,
+    "headline": "A peek into Scandinavia's origin",
+    "articleBackgroundImageLink": "https://images.unsplash.com/photo-1504829857797-ddff29c27927?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ&amp;s=d04cc88e0936763c6eb1d5cf268f6df2",
+    "datePublished": 1009855224,
+    "dateModified": 1014952824,
+    "categoryId": 1,
+    "authorId": 1,
+    "articleText": "The term Scandinavia in local usage covers the three kingdoms of Denmark, Norway, and Sweden. However, in English usage, the term also sometimes refers to the Scandinavian Peninsula..."
+  },
+  {
+    "id": 3,
+    "headline": "Astronomers announce discovering ten tiny Jovian satellites",
+    "articleBackgroundImageLink": "https://images.unsplash.com/photo-1503662549813-28954e75f215?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ&amp;s=85b1b1454e149b001e2415a1d98da039",
+    "datePublished": 1009855224,
+    "dateModified": 1014952824,
+    "categoryId": 1,
+    "authorId": 1
+  },
+  {
+    "id": 4,
+    "headline": "Fossil genome shows hybrid of two extinct species of human",
+    "articleBackgroundImageLink": "https://images.unsplash.com/photo-1527409335569-f0e5c91fa707?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ&amp;s=a7dfe365d0259a816ca47b35f5559948",
+    "datePublished": 1009855224,
+    "dateModified": 1014952824,
+    "categoryId": 1,
+    "authorId": 1
+  },
+  {
+    "id": 5,
+    "headline": "Manchester City beats Chelsea 2-0",
+    "articleBackgroundImageLink": "https://images.unsplash.com/photo-1516565340510-21016b8fc86c?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ&amp;s=644205802c249276155f94a757ef7446",
+    "datePublished": 1009855224,
+    "dateModified": 1014952824,
+    "categoryId": 2,
+    "authorId": 1
+  },
+  {
+    "id": 6,
+    "headline": "A quick look to Iceland landscapes",
+    "articleBackgroundImageLink": "https://images.unsplash.com/photo-1528837516156-0a7225a43641?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ&amp;s=51b36662ea68d328215bd0043adc5090",
+    "datePublished": 1009855224,
+    "dateModified": 1014952824,
+    "categoryId": 2,
+    "authorId": 1
+  },
+  {
+    "id": 7,
+    "headline": "Everything you need to know about Valkyries",
+    "articleBackgroundImageLink": "https://images.unsplash.com/photo-1536567901538-b873c1915f79?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ&amp;s=128e33d79dc67a5e718420a296f6ef84",
+    "datePublished": 1009855224,
+    "dateModified": 1014952824,
+    "categoryId": 3,
+    "authorId": 1
+  },
+  {
+    "id": 8,
+    "headline": "Welcome to Ghost",
+    "articleBackgroundImageLink": "https://images.unsplash.com/photo-1505504506221-02359e1e5812?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ&amp;s=134aea98d59b9fe66e4d3cc1f4569f89",
+    "datePublished": 1009855224,
+    "dateModified": 1014952824,
+    "categoryId": 4,
+    "authorId": 1
+  },
+  {
+    "id": 9,
+    "headline": "Using the Ghost editor",
+    "articleBackgroundImageLink": "https://images.unsplash.com/photo-1535224206242-487f7090b5bb?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ&amp;s=808c7e1dc18dbd4eb70bcb8e5aee3131",
+    "datePublished": 1009855224,
+    "dateModified": 1014952824,
+    "categoryId": 4,
+    "authorId": 1
+  },
+  {
+    "id": 10,
+    "headline": "Organising your content with tags",
+    "articleBackgroundImageLink": "https://casper.ghost.org/v1.0.0/images/tags.jpg",
+    "datePublished": 1009855224,
+    "dateModified": 1014952824,
+    "categoryId": 1,
+    "authorId": 2
+  },
+  {
+    "id": 11,
+    "headline": "Managing Ghost users",
+    "articleBackgroundImageLink": "https://casper.ghost.org/v1.0.0/images/team.jpg",
+    "datePublished": 1009855224,
+    "dateModified": 1014952824,
+    "categoryId": 1,
+    "authorId": 1
+  },
+  {
+    "id": 12,
+    "headline": "Managing Ghost users",
+    "articleBackgroundImageLink": "https://casper.ghost.org/v1.0.0/images/team.jpg",
+    "datePublished": 1009855224,
+    "dateModified": 1014952824,
+    "categoryId": 1,
+    "authorId": 1
+  },
+  {
+    "id": 13,
+    "headline": "Managing Ghost users",
+    "articleBackgroundImageLink": "https://casper.ghost.org/v1.0.0/images/team.jpg",
+    "datePublished": 1009855224,
+    "dateModified": 1014952824,
+    "categoryId": 1,
+    "authorId": 1
+  },
+  {
+    "id": 14,
+    "headline": "Managing Ghost users",
+    "articleBackgroundImageLink": "https://casper.ghost.org/v1.0.0/images/team.jpg",
+    "datePublished": 1009855224,
+    "dateModified": 1014952824,
+    "categoryId": 1,
+    "authorId": 1
+  }
+]
