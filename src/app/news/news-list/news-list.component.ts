@@ -3,6 +3,8 @@ import {Observable} from 'rxjs';
 import {Article} from '../models/article.model';
 import {NewsService} from '../services/news.service';
 import {CategoriesService} from '../services/categories.service';
+import {map, take} from 'rxjs/operators';
+import {of} from 'rxjs';
 
 @Component({
   selector: 'app-news-list',
@@ -11,6 +13,7 @@ import {CategoriesService} from '../services/categories.service';
 })
 export class NewsListComponent implements OnInit {
 
+  // category: string;
   news$: Observable<Array<Article>>;
 
   constructor(private newsService: NewsService,
@@ -21,7 +24,13 @@ export class NewsListComponent implements OnInit {
     this.news$ = this.newsService.getNews();
   }
 
-  getCategoryById(categoryId: number) {
-    return this.categoriesService.getCategoryById(categoryId);
+  getCategory(categoryId: number | string): Observable<any> {
+    // Работает. Но возвращает для всех новостей одинаковый title
+    // this.categoriesService.getCategory(categoryId).subscribe(c => this.category = c.title);
+    // return this.category;
+
+    // return this.categoriesService.getCategory(categoryId);
+    // Работает. Возвращает Observable<string>, который корректно распознается
+    return of('Science');
   }
 }
