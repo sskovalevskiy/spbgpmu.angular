@@ -10,51 +10,53 @@
         <div class="post post-presentation post-square lazy  background"
              [ngClass]="[(i==0)? 'first-post': (i==1)? 'second-post':'post-square']"
              [ngStyle]="{ 'background-image': 'url(' + article.articleBackgroundImageLink + ')'}">
-          <div class="gradient gradient2" [ngClass]="[(i!=1) ? 'd-flex align-items-center' : '']" >
+          <div class="gradient gradient2" [ngClass]="[(i!=1) ? 'd-flex align-items-center' : '']">
             <div *ngIf="i!=1; then thenTemplate else elseTemplate"></div>
 
             <ng-template #thenTemplate>
               <div class="float-top">
-                <div href="#" class="share-icons d-none d-sm-block">
+                <div class="share-icons d-none d-sm-block">
                   <div class="icon-container">
                     <i class="fa fa-share"></i>
                     <div class="icons">
                       <a href="https://www.facebook.com/sharer/sharer.php?u=http://157.230.217.118:3001/managing-users/"
-                         onclick="window.open(this.href, &#39;facebook-share&#39;,&#39;width=580, height=300&#39;);return false;"><i
-                        class="fab fa-facebook-f"></i></a>
+                         onclick="window.open(this.href, &#39;facebook-share&#39;,&#39;width=580, height=300&#39;);return false;">
+                        <i class="fab fa-facebook-f"></i></a>
                       <a
                         href="https://twitter.com/share?text=Managing%20Ghost%20users&amp;url=http://157.230.217.118:3001/managing-users/"
-                        onclick="window.open(this.href, &#39;twitter-share&#39;, &#39;width=580, height=300&#39;);return false;"><i
-                        class="fab fa-twitter"></i></a>
+                        onclick="window.open(this.href, &#39;twitter-share&#39;, &#39;width=580, height=300&#39;);return false;">
+                        <i class="fab fa-twitter"></i></a>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="post-info">
-                <div *ngIf="i>2" class="separator"></div>
-                <h2 *ngIf="i==0"><a href="http://157.230.217.118:3001/{{article.articleLink}}/">{{article.headline}}</a></h2>
-                <h3 *ngIf="i>1"><a href="http://157.230.217.118:3001/{{article.articleLink}}/">{{article.headline}}</a></h3>
+                <div *ngIf="i>1" class="separator"></div>
+                <h2 *ngIf="i==0"><a routerLink="{{article.id}}">{{article.headline}}</a></h2>
+                <h3 *ngIf="i>1"><a routerLink="{{article.id}}">{{article.headline}}</a></h3>
                 <div class="post-tags">
-                  <a href="http://157.230.217.118:3001/tag/getting-started/">{{getCategoryById(article.categoryId).title}}</a>
+                  <a href="http://157.230.217.118:3001/tag/getting-started/">
+                    {{getCategory(article.categoryId) | async}}
+                  </a>
                 </div>
-                <div *ngIf="i==0" class="separator"></div>
                 <div *ngIf="i==0; then templateName">
                   Here is never showing
                 </div>
                 <ng-template #templateName>
-                  <p class="d-none d-sm-block">Thor is a prominently mentioned god throughout the recorded history of the
-                    Germanic peoples, from the Roman occupation of regions of Germania, to the tribal expansions of the
-                    Migration Period...</p>
-                  <a href="http://157.230.217.118:3001/thor-the-thunder-god/" class="btn btn-no-background">Read Post <i
-                    class="fa fa-chevron-right"></i></a>
+                  <div class="separator"></div>
+                  <p class="d-none d-sm-block">{{article.articleText}}</p>
+                  <a routerLink="{{article.id}}" class="btn btn-no-background">
+                    Read Post
+                    <i class="fa fa-chevron-right"></i>
+                  </a>
                 </ng-template>
               </div>
             </ng-template>
 
             <ng-template #elseTemplate>
-              <h3><a href="http://157.230.217.118:3001/a-peak-into-scandinavias-origin/">{{article.headline}}</a></h3>
+              <h3><a routerLink="{{article.id}}">{{article.headline}}</a></h3>
               <div class="post-tags">
-                <a href="http://157.230.217.118:3001/tag/history/">{{getCategoryById(article.categoryId).title}}</a>
+                <a href="http://157.230.217.118:3001/tag/history/">{{getCategory(article.categoryId) | async}}</a>
               </div>
               <div class="share-icons">
                 <div class="icon-container">
@@ -80,17 +82,17 @@
             <div class="float-bottom">
               <div *ngIf="i!=1; then thenTemplateName else elseTemplateName"></div>
               <ng-template #thenTemplateName>
-              <a href="http://157.230.217.118:3001/author/johndoe/" class="vertical-align author-info">
-                <div class="author-image background lazy "
-                     data-src="http://157.230.217.118:3001/content/images/2018/09/Jason-Davis-headshot-min.jpg"></div>
-                John Doe
-              </a>
+                <a href="http://157.230.217.118:3001/author/johndoe/" class="vertical-align author-info">
+                  <div class="author-image background lazy"></div>
+                  John Doe
+                </a>
               </ng-template>
               <ng-template #elseTemplateName>
-                <p>The term Scandinavia in local usage covers the three kingdoms of Denmark, Norway, and Sweden. However,
-                  in English usage, the term also sometimes refers to the Scandinavian Peninsula...</p>
-                <a href="http://157.230.217.118:3001/a-peak-into-scandinavias-origin/" class="btn btn-no-background">Read
-                  Post <i class="fa fa-chevron-right"></i></a>
+                <p>{{article.articleText}}</p>
+                <a routerLink="{{article.id}}" class="btn btn-no-background">
+                  Read Post
+                  <i class="fa fa-chevron-right"></i>
+                </a>
               </ng-template>
             </div>
           </div>
