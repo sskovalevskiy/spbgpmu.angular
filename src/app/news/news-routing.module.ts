@@ -3,7 +3,6 @@ import {RouterModule, Routes} from '@angular/router';
 import {CategoriesComponent} from './categories/categories.component';
 import {ArticleComponent} from './article/article.component';
 import {AuthorsComponent} from './authors/authors.component';
-import {AuthorComponent} from './author/author.component';
 import {NewsComponent} from './news.component';
 
 const routes: Routes = [
@@ -18,7 +17,7 @@ const routes: Routes = [
   {
     path: 'authors', children: [
       {path: '', component: AuthorsComponent},
-      {path: ':name', component: AuthorComponent}
+      {path: ':name', component: NewsComponent}
     ]
   }
 ];
