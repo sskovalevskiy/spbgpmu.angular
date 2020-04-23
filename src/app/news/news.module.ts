@@ -1,28 +1,34 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {NewsListComponent} from './news-list/news-list.component';
-import {LatestPostComponent} from './latest-post/latest-post.component';
-import {PaginationComponent} from './pagination/pagination.component';
-import {NewsCarouselComponent} from './news-carousel/news-carousel.component';
+import {NewsListComponent} from './shared/news-list/news-list.component';
+import {LatestPostComponent} from './shared/latest-post/latest-post.component';
+import {PaginationComponent} from './shared/pagination/pagination.component';
+import {NewsCarouselComponent} from './shared/news-carousel/news-carousel.component';
 import {CategoriesComponent} from './categories/categories.component';
 import {ArticleComponent} from './article/article.component';
 import {NewsRoutingModule} from './news-routing.module';
 import {AuthorsComponent} from './authors/authors.component';
 
 @NgModule({
-  declarations: [
-    NewsListComponent,
-    LatestPostComponent,
-    PaginationComponent,
+    declarations: [
+        NewsListComponent,
+        LatestPostComponent,
+        PaginationComponent,
+        NewsCarouselComponent,
+        CategoriesComponent,
+        ArticleComponent,
+        AuthorsComponent
+    ],
+  exports: [
     NewsCarouselComponent,
-    CategoriesComponent,
-    ArticleComponent,
-    AuthorsComponent
+    LatestPostComponent,
+    NewsListComponent,
+    PaginationComponent
   ],
-  imports: [
-    CommonModule,
-    NewsRoutingModule
-  ]
+    imports: [
+        CommonModule,
+        NewsRoutingModule
+    ]
 })
 export class NewsModule {
 }
