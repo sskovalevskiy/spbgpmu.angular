@@ -1,15 +1,15 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {NewsListComponent} from './news-list/news-list.component';
 import {CategoriesComponent} from './categories/categories.component';
 import {ArticleComponent} from './article/article.component';
 import {AuthorsComponent} from './authors/authors.component';
 import {AuthorComponent} from './author/author.component';
+import {NewsComponent} from './news.component';
 
 const routes: Routes = [
   {
     path: 'news', children: [
-      {path: '', component: NewsListComponent},
+      {path: '', component: NewsComponent},
       {path: ':id', component: ArticleComponent}
     ]
   },
