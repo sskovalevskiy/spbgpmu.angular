@@ -1,5 +1,5 @@
 <div class="post-info-wrapper post-presentation active lazy background"
-     style="background-image: url(&quot;http://157.230.217.118:3001/content/images/2018/09/michal-parzuchowski-324218-unsplash-min.jpg&quot;);">
+     [ngStyle]="{ 'background-image': 'url(' + (author$ | async).backgroundImageURL + ')'}">
   <div class="gradient gradient1">
     <div class="container d-flex align-items-center">
       <div class="row align-items-center w-100">
@@ -7,16 +7,16 @@
           <div class="d-xs-block d-sm-flex align-items-center">
             <div class="author-image-wrapper animated fadeInLeft">
               <div class="author-image background lazy"
-                   style="background-image: url(&quot;http://157.230.217.118:3001/content/images/2018/09/10258553_490703191059311_1426632935227693623_o-min.jpg&quot;);"></div>
+                   [ngStyle]="{ 'background-image': 'url(' + (author$ | async).photoURL + ')'}"></div>
             </div>
             <div class="author-info-wrapper">
-              <h2 class="animated fadeInDown">Diego Balmaceda</h2>
-              <p class="d-block mt-0 animated fadeInUp"><i class="fa fa-map-marker"></i> Managua, Nicaragua</p>
+              <h2 class="animated fadeInDown">{{(author$ | async).name}}</h2>
+              <p class="d-block mt-0 animated fadeInUp"><i class="fa fa-map-marker"></i>{{(author$ | async).city}}</p>
             </div>
           </div>
         </div>
         <div class="col-sm-12 col-md-12 col-lg col-xs-12">
-          <p class="author-bio d-block animated fadeInUp">System Engineering student. 19 years old. I love open source projects, coffee, Age of Empires... Did I say coffee already?</p>
+          <p class="author-bio d-block animated fadeInUp">{{(author$ | async).additionalInfo}}</p>
         </div>
       </div>
     </div>

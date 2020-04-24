@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {Observable} from "rxjs";
+import {Author} from "../../models/author.model";
+import {AuthorsService} from "../../services/authors.service";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-author',
@@ -7,9 +11,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AuthorComponent implements OnInit {
 
-  constructor() { }
+  author: string;
+  author$: Observable<Author>;
+
+  constructor(private router: Router,
+              private authorsService: AuthorsService) {
+  }
 
   ngOnInit() {
+    this.author = this.router.url.split('/').pop();
+    this.author$ = this.authorsService.getAuthor(this.author);
   }
 
 }
