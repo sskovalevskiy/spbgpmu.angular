@@ -8,6 +8,7 @@ import {CategoriesComponent} from './categories/categories.component';
 import {ArticleComponent} from './article/article.component';
 import {NewsRoutingModule} from './news-routing.module';
 import {AuthorsComponent} from './authors/authors.component';
+import {PagePresentationComponent} from './shared/page-presentation/page-presentation.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import {AuthorsComponent} from './authors/authors.component';
     NewsCarouselComponent,
     CategoriesComponent,
     ArticleComponent,
-    AuthorsComponent
+    AuthorsComponent,
+    PagePresentationComponent
   ],
   imports: [
     CommonModule,
