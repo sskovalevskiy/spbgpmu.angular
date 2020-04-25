@@ -12,8 +12,9 @@ export class CategoriesService {
   constructor(private http: HttpClient) {
   }
 
-  getCategories(): Observable<any> {
-    return this.http.get('./assets/categories.json');
+  // Сделано по https://stackoverflow.com/questions/44940695/how-to-convert-observableany-to-array
+  getCategories(): Observable<Array<Category>> {
+      return this.http.get<Array<Category>>('./assets/categories.json');
   }
 
   getCategory(id: number | string): Observable<Category> {
