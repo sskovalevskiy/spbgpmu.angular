@@ -13,7 +13,7 @@ const routes: Routes = [
     ]
   },
   {path: 'categories', component: CategoriesComponent},
-  {path: 'tag/:category', component: CategoriesComponent},
+  {path: 'tag/:category', component: NewsComponent},
   {
     path: 'authors', children: [
       {path: '', component: AuthorsComponent},
