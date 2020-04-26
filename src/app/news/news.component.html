@@ -1,14 +1,14 @@
-<ng-template [ngIf]="this.href === '/news'" [ngIfThen]="appNewsCarousel" [ngIfElse]="appAuthor">
-  This content is never showing
-</ng-template>
-<ng-template #appNewsCarousel>
-  <app-news-carousel></app-news-carousel>
-</ng-template>
-<ng-template #appAuthor>
-  <app-author></app-author>
-</ng-template>
-
-
+<div [ngSwitch]="href">
+  <ng-template [ngSwitchCase]="'news'">
+    <app-news-carousel></app-news-carousel>
+  </ng-template>
+  <ng-template [ngSwitchCase]="'tag'">
+    <app-page-presentation [page]="pageTags"></app-page-presentation>
+  </ng-template>
+  <ng-template [ngSwitchCase]="'authors'">
+    <app-author></app-author>
+  </ng-template>
+</div>
 
 <app-latest-post></app-latest-post>
 <app-news-list></app-news-list>

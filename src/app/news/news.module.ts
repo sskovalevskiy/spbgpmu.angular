@@ -19,7 +19,7 @@ import {PagePresentationComponent} from './shared/page-presentation/page-present
     NewsCarouselComponent,
     CategoriesComponent,
     ArticleComponent,
-    PagePresentationComponent
+    PagePresentationComponent,
     AuthorsComponent,
     AuthorComponent
   ],
@@ -28,7 +28,8 @@ import {PagePresentationComponent} from './shared/page-presentation/page-present
     LatestPostComponent,
     NewsListComponent,
     PaginationComponent,
-    AuthorComponent
+    AuthorComponent,
+    PagePresentationComponent
   ],
   imports: [
     CommonModule,
