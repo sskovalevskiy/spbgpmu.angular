@@ -8,6 +8,7 @@ import {MainComponent} from "./main/main.component";
 import {WidgetComponent} from "./widget/widget.component";
 import { FooterComponent } from './footer/footer.component';
 import { WelcomeComponent } from './main/welcome/welcome.component';
+import { NewArrivalComponent } from './main/new-arrival/new-arrival.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { WelcomeComponent } from './main/welcome/welcome.component';
     MainComponent,
     WidgetComponent,
     FooterComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    NewArrivalComponent
   ],
   imports: [
     CommonModule
