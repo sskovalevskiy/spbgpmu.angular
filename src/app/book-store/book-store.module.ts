@@ -7,6 +7,7 @@ import {AdBannerComponent} from "./main/ad-banner/ad-banner.component";
 import {MainComponent} from "./main/main.component";
 import {WidgetComponent} from "./widget/widget.component";
 import { FooterComponent } from './footer/footer.component';
+import { WelcomeComponent } from './main/welcome/welcome.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FooterComponent } from './footer/footer.component';
     AdBannerComponent,
     MainComponent,
     WidgetComponent,
-    FooterComponent
+    FooterComponent,
+    WelcomeComponent
   ],
   imports: [
     CommonModule
