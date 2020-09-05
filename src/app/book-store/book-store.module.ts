@@ -9,6 +9,7 @@ import {WidgetComponent} from "./widget/widget.component";
 import { FooterComponent } from './footer/footer.component';
 import { WelcomeComponent } from './main/welcome/welcome.component';
 import { NewArrivalComponent } from './main/new-arrival/new-arrival.component';
+import { BestSellingComponent } from './main/best-selling/best-selling.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { NewArrivalComponent } from './main/new-arrival/new-arrival.component';
     WidgetComponent,
     FooterComponent,
     WelcomeComponent,
-    NewArrivalComponent
+    NewArrivalComponent,
+    BestSellingComponent
   ],
   imports: [
     CommonModule
