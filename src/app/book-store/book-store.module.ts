@@ -10,6 +10,7 @@ import { FooterComponent } from './footer/footer.component';
 import { WelcomeComponent } from './main/welcome/welcome.component';
 import { NewArrivalComponent } from './main/new-arrival/new-arrival.component';
 import { BestSellingComponent } from './main/best-selling/best-selling.component';
+import { MonthlyExclusiveComponent } from './main/monthly-exclusive/monthly-exclusive.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { BestSellingComponent } from './main/best-selling/best-selling.component
     FooterComponent,
     WelcomeComponent,
     NewArrivalComponent,
-    BestSellingComponent
+    BestSellingComponent,
+    MonthlyExclusiveComponent
   ],
   imports: [
     CommonModule
