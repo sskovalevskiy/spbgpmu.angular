@@ -11,6 +11,7 @@ import { WelcomeComponent } from './main/welcome/welcome.component';
 import { NewArrivalComponent } from './main/new-arrival/new-arrival.component';
 import { BestSellingComponent } from './main/best-selling/best-selling.component';
 import { MonthlyExclusiveComponent } from './main/monthly-exclusive/monthly-exclusive.component';
+import { SearchFormComponent } from './main/search-form/search-form.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { MonthlyExclusiveComponent } from './main/monthly-exclusive/monthly-excl
     WelcomeComponent,
     NewArrivalComponent,
     BestSellingComponent,
-    MonthlyExclusiveComponent
+    MonthlyExclusiveComponent,
+    SearchFormComponent
   ],
   imports: [
     CommonModule
