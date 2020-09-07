@@ -1,0 +1,23 @@
+.top_header ul {
+  display: flex;
+  margin: 0;
+  padding-left: 0;
+}
+.top_header ul li {
+  list-style-type: none; /* Убираем маркеры */
+  text-align: center;
+  width: 100%;
+}
+.top_header>.container>ul>li {
+  padding: 1rem 0;
+}
+.top_header>.container>ul>li:hover{
+  background: #fff;
+  color: #3c3c3c;
+}
+.top_header ul li a{
+  color: #fff;
+}
+.bottom_header .logo p{
+  margin: 0;
+}
