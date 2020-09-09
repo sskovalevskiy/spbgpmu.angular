@@ -8,7 +8,7 @@ import {BookStoreModule} from "./book-store/book-store.module";
 
 const routes: Routes = [
   { path: 'congress', component: CongressComponent},
-  { path: 'books', component: BookStoreComponent},
+  // { path: 'books', component: BookStoreComponent},
   { path: '**', component: NotFoundComponent }
 ];
 
