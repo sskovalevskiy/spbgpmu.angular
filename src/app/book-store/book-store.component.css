@@ -5204,7 +5204,7 @@ body.no_page_title #content, body .no_slider {
 .hero.page_title .container {
   position: relative;
   padding: 250px 0 90px;
-  /*background: url(img/book_tilt.png) 105% 120px no-repeat;*/
+  background:url('http://tokokoodemo.us/papirus/books/wp-content/themes/papirus/img/book_tilt.png') 105% 120px no-repeat;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box

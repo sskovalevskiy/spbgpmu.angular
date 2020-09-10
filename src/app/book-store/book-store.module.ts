@@ -14,6 +14,7 @@ import {BestSellingComponent} from "./main/best-selling/best-selling.component";
 import {MonthlyExclusiveComponent} from "./main/monthly-exclusive/monthly-exclusive.component";
 import {SearchFormComponent} from "./main/search-form/search-form.component";
 import {WishlistComponent} from "./wishlist/wishlist.component";
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import {WishlistComponent} from "./wishlist/wishlist.component";
     BestSellingComponent,
     MonthlyExclusiveComponent,
     SearchFormComponent,
-    WishlistComponent
+    WishlistComponent,
+    CartComponent
   ],
   imports: [
     CommonModule,
