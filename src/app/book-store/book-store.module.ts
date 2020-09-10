@@ -17,6 +17,7 @@ import {WishlistComponent} from "./wishlist/wishlist.component";
 import { CartComponent } from './cart/cart.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { MyAccountComponent } from './my-account/my-account.component';
+import { BookShopComponent } from './shop/book-shop.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { MyAccountComponent } from './my-account/my-account.component';
     WishlistComponent,
     CartComponent,
     CheckoutComponent,
-    MyAccountComponent
+    MyAccountComponent,
+    BookShopComponent
   ],
   imports: [
     CommonModule,

@@ -7,15 +7,17 @@ import {BookStoreComponent} from "./book-store.component";
 import {CartComponent} from "./cart/cart.component";
 import {CheckoutComponent} from "./checkout/checkout.component";
 import {MyAccountComponent} from "./my-account/my-account.component";
+import {BookShopComponent} from "./shop/book-shop.component";
 
 const routes: Routes = [
   {
     path: 'books', component: BookStoreComponent, children: [
       {path: '', component: MainComponent},
+      {path: 'shop', component: BookShopComponent},
       {path: 'cart', component: CartComponent},
+      {path: 'wishlist', component: WishlistComponent},
       {path: 'checkout', component: CheckoutComponent},
-      {path: 'my-account', component: MyAccountComponent},
-      {path: 'wishlist', component: WishlistComponent}
+      {path: 'my-account', component: MyAccountComponent}
     ]
   }
 ];

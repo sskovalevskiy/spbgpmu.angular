@@ -9143,8 +9143,8 @@ table.variations th, table.variations td {
 }
 
 .featured_book .product {
-  padding: 0 50px 100px 0;
-  margin-left: 50px
+  padding: 50px;
+  margin: 0 50px 100px;
 }
 
 .featured_book .product figure {
