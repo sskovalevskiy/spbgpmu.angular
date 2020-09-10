@@ -16,6 +16,7 @@ import {SearchFormComponent} from "./main/search-form/search-form.component";
 import {WishlistComponent} from "./wishlist/wishlist.component";
 import { CartComponent } from './cart/cart.component';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { MyAccountComponent } from './my-account/my-account.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { CheckoutComponent } from './checkout/checkout.component';
     SearchFormComponent,
     WishlistComponent,
     CartComponent,
-    CheckoutComponent
+    CheckoutComponent,
+    MyAccountComponent
   ],
   imports: [
     CommonModule,
