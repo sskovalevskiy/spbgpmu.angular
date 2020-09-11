@@ -20,6 +20,7 @@ import { MyAccountComponent } from './my-account/my-account.component';
 import { BookListComponent } from './shop/book-list/book-list.component';
 import { BookComponent } from './shop/book/book.component';
 import { ContactComponent } from './contact/contact.component';
+import { FaqComponent } from './faq/faq.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { ContactComponent } from './contact/contact.component';
     MyAccountComponent,
     BookListComponent,
     BookComponent,
-    ContactComponent
+    ContactComponent,
+    FaqComponent
   ],
   imports: [
     CommonModule,
