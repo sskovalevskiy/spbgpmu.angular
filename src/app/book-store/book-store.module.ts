@@ -4,20 +4,21 @@ import { CommonModule } from '@angular/common';
 import { BookStoreRoutingModule } from './book-store-routing.module';
 import {BookStoreComponent} from "./book-store.component";
 import {HeaderComponent} from "./header/header.component";
-import {AdBannerComponent} from "./main/ad-banner/ad-banner.component";
-import {MainComponent} from "./main/main.component";
+import {AdBannerComponent} from "./shop/main/ad-banner/ad-banner.component";
+import {MainComponent} from "./shop/main/main.component";
 import {WidgetComponent} from "./widget/widget.component";
 import {FooterComponent} from "./footer/footer.component";
-import {WelcomeComponent} from "./main/welcome/welcome.component";
-import {NewArrivalComponent} from "./main/new-arrival/new-arrival.component";
-import {BestSellingComponent} from "./main/best-selling/best-selling.component";
-import {MonthlyExclusiveComponent} from "./main/monthly-exclusive/monthly-exclusive.component";
-import {SearchFormComponent} from "./main/search-form/search-form.component";
-import {WishlistComponent} from "./wishlist/wishlist.component";
-import { CartComponent } from './cart/cart.component';
-import { CheckoutComponent } from './checkout/checkout.component';
+import {WelcomeComponent} from "./shop/main/welcome/welcome.component";
+import {NewArrivalComponent} from "./shop/main/new-arrival/new-arrival.component";
+import {BestSellingComponent} from "./shop/main/best-selling/best-selling.component";
+import {MonthlyExclusiveComponent} from "./shop/main/monthly-exclusive/monthly-exclusive.component";
+import {SearchFormComponent} from "./shop/main/search-form/search-form.component";
+import {WishlistComponent} from "./shop/wishlist/wishlist.component";
+import { CartComponent } from './shop/cart/cart.component';
+import { CheckoutComponent } from './shop/checkout/checkout.component';
 import { MyAccountComponent } from './my-account/my-account.component';
-import { BookShopComponent } from './shop/book-shop.component';
+import { BookListComponent } from './shop/book-list/book-list.component';
+import { BookComponent } from './shop/book/book.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { BookShopComponent } from './shop/book-shop.component';
     CartComponent,
     CheckoutComponent,
     MyAccountComponent,
-    BookShopComponent
+    BookListComponent,
+    BookComponent
   ],
   imports: [
     CommonModule,

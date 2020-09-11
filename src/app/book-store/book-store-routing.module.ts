@@ -1,19 +1,22 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 
-import {MainComponent} from "./main/main.component";
-import {WishlistComponent} from "./wishlist/wishlist.component";
+import {MainComponent} from "./shop/main/main.component";
+import {WishlistComponent} from "./shop/wishlist/wishlist.component";
 import {BookStoreComponent} from "./book-store.component";
-import {CartComponent} from "./cart/cart.component";
-import {CheckoutComponent} from "./checkout/checkout.component";
+import {CartComponent} from "./shop/cart/cart.component";
+import {CheckoutComponent} from "./shop/checkout/checkout.component";
 import {MyAccountComponent} from "./my-account/my-account.component";
-import {BookShopComponent} from "./shop/book-shop.component";
+import {BookListComponent} from "./shop/book-list/book-list.component";
+import {BookComponent} from "./shop/book/book.component";
 
 const routes: Routes = [
   {
     path: 'books', component: BookStoreComponent, children: [
       {path: '', component: MainComponent},
-      {path: 'shop', component: BookShopComponent},
+      {path: 'shop', component: BookListComponent},
+      //TODO path 'product' нужно будет заменить на 'shop?bookId=1'
+      {path: 'product', component: BookComponent},
       {path: 'cart', component: CartComponent},
       {path: 'wishlist', component: WishlistComponent},
       {path: 'checkout', component: CheckoutComponent},
