@@ -19,6 +19,7 @@ import { CheckoutComponent } from './shop/checkout/checkout.component';
 import { MyAccountComponent } from './my-account/my-account.component';
 import { BookListComponent } from './shop/book-list/book-list.component';
 import { BookComponent } from './shop/book/book.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { BookComponent } from './shop/book/book.component';
     CheckoutComponent,
     MyAccountComponent,
     BookListComponent,
-    BookComponent
+    BookComponent,
+    ContactComponent
   ],
   imports: [
     CommonModule,

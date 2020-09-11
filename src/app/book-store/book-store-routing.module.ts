@@ -9,6 +9,7 @@ import {CheckoutComponent} from "./shop/checkout/checkout.component";
 import {MyAccountComponent} from "./my-account/my-account.component";
 import {BookListComponent} from "./shop/book-list/book-list.component";
 import {BookComponent} from "./shop/book/book.component";
+import {ContactComponent} from "./contact/contact.component";
 
 const routes: Routes = [
   {
@@ -20,7 +21,8 @@ const routes: Routes = [
       {path: 'cart', component: CartComponent},
       {path: 'wishlist', component: WishlistComponent},
       {path: 'checkout', component: CheckoutComponent},
-      {path: 'my-account', component: MyAccountComponent}
+      {path: 'my-account', component: MyAccountComponent},
+      {path: 'contact', component: ContactComponent}
     ]
   }
 ];
