@@ -1,9 +1,27 @@
+.top_header {
+  background: #3c3c3c;
+  color: #fff
+}
+
+@media screen and (min-width: 1600px) {
+  .top_header p {
+    margin: 0
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .top_header {
+    display: none
+  }
+}
+
 .top_header ul {
   display: flex;
   margin: 0;
   padding-left: 0;
 }
 .top_header ul li {
+  font-size: 12px;
   list-style-type: none; /* Убираем маркеры */
   text-align: center;
   width: 100%;
@@ -17,10 +35,4 @@
 }
 .top_header ul li a{
   color: #fff;
-}
-.bottom_header .logo p{
-  margin: 0;
-}
-.logo #site-description {
-  margin-right: -30px;
 }

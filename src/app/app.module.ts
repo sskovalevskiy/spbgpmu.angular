@@ -6,12 +6,14 @@ import {AppComponent} from './app.component';
 import {NotFoundComponent} from './not-found/not-found.component';
 import {FooterComponent} from './footer/footer.component';
 import {BookStoreModule} from "./book-store/book-store.module";
+import {HeaderComponent} from './header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NotFoundComponent,
-    FooterComponent
+    FooterComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -21,4 +23,5 @@ import {BookStoreModule} from "./book-store/book-store.module";
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

@@ -4946,6 +4946,10 @@ body.no_page_title #content, body .no_slider {
   z-index: 999
 }
 
+.page_header .bottom_header{
+  margin-top: 44px;
+}
+
 @media screen and (min-width: 768px) {
   .page_header {
     position: absolute;
@@ -5087,7 +5091,7 @@ body.no_page_title #content, body .no_slider {
 
 .logo {
   padding: 20px 0;
-  margin-right: 20px;
+  margin-right: 60px;
   margin-left: 0;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
