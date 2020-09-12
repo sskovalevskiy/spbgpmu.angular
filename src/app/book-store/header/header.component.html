@@ -1,5 +1,4 @@
 <header id="masthead" role="banner" class="page_header ">
-
   <div class="bottom_header">
     <div class="container">
       <a class="mobile_nav_trigger pull-left"><i class="fa fa-bars"></i></a>
@@ -11,13 +10,13 @@
 
       <nav class="primary_menu pull-left">
         <ul class="menu">
-          <li class="menu-item"><a href="">Главная</a></li>
-          <li class="menu-item"><a href="">Книги</a></li>
-          <li class="menu-item"><a href="">Журналы</a></li>
-          <li class="menu-item"><a href="">Sale</a></li>
-          <li class="menu-item"><a href="">Оплата и доставка</a></li>
-          <li class="menu-item"><a href="">Контакты</a></li>
-          <li class="menu-item"><a href="">Faq</a></li>
+          <li class="menu-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"><a routerLink="/books">Главная</a></li>
+          <li class="menu-item" routerLinkActive="active"><a routerLink="/books/shop" [queryParams]="{category:'books'}">Книги</a></li>
+          <li class="menu-item" routerLinkActive="active"><a routerLink="/books/shop" [queryParams]="{category:'journal'}">Журналы</a></li>
+          <li class="menu-item" routerLinkActive="active"><a routerLink="/books/shop" [queryParams]="{category:'sale'}">Sale</a></li>
+          <li class="menu-item" routerLinkActive="active"><a routerLink="/books/delivery">Оплата и доставка</a></li>
+          <li class="menu-item" routerLinkActive="active"><a routerLink="/books/contact">Контакты</a></li>
+          <li class="menu-item" routerLinkActive="active"><a routerLink="/books/faq">Faq</a></li>
         </ul>
       </nav>
       <div class="right_section">
@@ -33,8 +32,7 @@
               </form>
             </div>
           </li>
-          <li class="cart_button"><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-
+          <li class="cart_button"><a routerLink="/books/cart"><i class="fa fa-shopping-cart"></i></a></li>
         </ul>
       </div>
     </div>

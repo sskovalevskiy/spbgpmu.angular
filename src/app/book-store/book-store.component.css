@@ -5389,6 +5389,10 @@ body.no_page_title #content, body .no_slider {
   border-bottom-color: #df6d2e
 }
 
+.primary_menu .menu-item.active {
+  border-bottom-color: #df6d2e
+}
+
 .primary_menu .menu-item:hover > ul {
   display: block
 }
