@@ -11,6 +11,7 @@ import {BookListComponent} from "./shop/book-list/book-list.component";
 import {BookComponent} from "./shop/book/book.component";
 import {ContactComponent} from "./contact/contact.component";
 import {FaqComponent} from "./faq/faq.component";
+import {DeliveryComponent} from "./delivery/delivery.component";
 
 const routes: Routes = [
   {
@@ -22,6 +23,7 @@ const routes: Routes = [
       {path: 'cart', component: CartComponent},
       {path: 'wishlist', component: WishlistComponent},
       {path: 'checkout', component: CheckoutComponent},
+      {path: 'delivery', component: DeliveryComponent},
       {path: 'my-account', component: MyAccountComponent},
       {path: 'contact', component: ContactComponent},
       {path: 'faq', component: FaqComponent}

@@ -21,6 +21,7 @@ import { BookListComponent } from './shop/book-list/book-list.component';
 import { BookComponent } from './shop/book/book.component';
 import { ContactComponent } from './contact/contact.component';
 import { FaqComponent } from './faq/faq.component';
+import { DeliveryComponent } from './delivery/delivery.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { FaqComponent } from './faq/faq.component';
     BookListComponent,
     BookComponent,
     ContactComponent,
-    FaqComponent
+    FaqComponent,
+    DeliveryComponent
   ],
   imports: [
     CommonModule,
