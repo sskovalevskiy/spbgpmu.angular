@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-page-title',
@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PageTitleComponent implements OnInit {
 
-  pageTitle: string;
+  @Input() pageTitle: string;
 
   constructor() { }
 
