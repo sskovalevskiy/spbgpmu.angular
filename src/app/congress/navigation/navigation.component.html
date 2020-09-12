@@ -54,11 +54,11 @@
     <div class="collapse navbar-collapse" id="bconfNav">
       <i class="fa fa-times close-navbar-mobile" aria-hidden="true" data-toggle="collapse" data-target="#bconfNav"></i>
       <ul class="navbar-nav ml-auto">
-        <li><a href="#about" data-scroll-nav="1" class="nav-link" i18n>О конгрессе</a></li>
-        <li><a href="#speakers" data-scroll-nav="2" class="nav-link" i18n>Спикеры</a></li>
-        <li><a href="#schedule" data-scroll-nav="3" class="nav-link" i18n>Программа</a></li>
-        <li><a href="#location" data-scroll-nav="4" class="nav-link" i18n>Место проведения</a></li>
-        <li><a href="#sponsors" data-scroll-nav="5" class="nav-link" i18n>Cпонсоры</a></li>
+        <li><a [routerLink]="'.'" fragment="about" data-scroll-nav="1" class="nav-link" i18n>О конгрессе</a></li>
+        <li><a [routerLink]="'.'" fragment="speakers" data-scroll-nav="2" class="nav-link" i18n>Спикеры</a></li>
+        <li><a [routerLink]="'.'" fragment="schedule" data-scroll-nav="3" class="nav-link" i18n>Программа</a></li>
+        <li><a [routerLink]="'.'" fragment="location" data-scroll-nav="4" class="nav-link" i18n>Место проведения</a></li>
+        <li><a [routerLink]="'.'" fragment="sponsors" data-scroll-nav="5" class="nav-link" i18n>Cпонсоры</a></li>
         <li><a href="" target="_blank" class="nav-link" id="buyTicketsLink" i18n>Зарегистрироваться</a></li>
       </ul>
     </div>
