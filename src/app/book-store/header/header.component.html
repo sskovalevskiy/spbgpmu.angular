@@ -1,10 +1,12 @@
-<header id="masthead" role="banner" class="page_header ">
+<header class="page_header">
   <div class="bottom_header">
     <div class="container">
       <a class="mobile_nav_trigger pull-left"><i class="fa fa-bars"></i></a>
       <div class="logo">
         <div class="branding">
-          <h1 id="site-title"><a href="" title="Книжная лавка" rel="home">Книжная лавка</a></h1>
+          <h1 id="site-title">
+            <a routerLink="/books" title="Книжная лавка" rel="home">Книжная лавка</a>
+          </h1>
           <p id="site-description" class="pull-right">Педиатрички</p></div>
       </div>
 
@@ -12,7 +14,7 @@
         <ul class="menu">
           <li class="menu-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"><a routerLink="/books">Главная</a></li>
           <li class="menu-item" routerLinkActive="active"><a routerLink="/books/shop" [queryParams]="{category:'books'}">Книги</a></li>
-          <li class="menu-item" routerLinkActive="active"><a routerLink="/books/shop" [queryParams]="{category:'journal'}">Журналы</a></li>
+          <li class="menu-item" routerLinkActive="active"><a routerLink="/books/shop" [queryParams]="{category:'journals'}">Журналы</a></li>
           <li class="menu-item" routerLinkActive="active"><a routerLink="/books/shop" [queryParams]="{category:'sale'}">Sale</a></li>
           <li class="menu-item" routerLinkActive="active"><a routerLink="/books/delivery">Оплата и доставка</a></li>
           <li class="menu-item" routerLinkActive="active"><a routerLink="/books/contact">Контакты</a></li>
@@ -21,6 +23,7 @@
       </nav>
       <div class="right_section">
         <ul>
+          <!-- TODO Попробовать заменить <li class="search_button"> на <app-search-form> -->
           <li class="search_button">
             <a href="" class="search_button_trigger">
               <i class="fa fa-search"></i>
@@ -33,6 +36,7 @@
             </div>
           </li>
           <li class="cart_button"><a routerLink="/books/cart"><i class="fa fa-shopping-cart"></i></a></li>
+          <li class="cart_button"><a routerLink="/books/wishlist"><i class="fa fa-heart-o"></i></a></li>
         </ul>
       </div>
     </div>

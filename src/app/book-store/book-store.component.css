@@ -9875,7 +9875,8 @@ p.stock {
     position: static
   }
 }
-
+/* TODO padding-right: 50px - похоже единственное отличие между .widget_top_rated_products и .widget_products.
+    Возможно стоит объединить два css класса */
 .widget_top_rated_products .product_list_widget li a {
   padding-right: 50px
 }

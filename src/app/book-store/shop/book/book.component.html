@@ -1005,129 +1005,15 @@
 
       </section>
 
-
       <aside class="sidebar col-md-3">
-        <div class="book_search widget_book_search">
-          <div class="widget_content">
-            <h2 class="widget_title">Find<strong>Product</strong></h2>
-            <form action="http://tokokoodemo.us/papirus/books/" method="get" role="search">
-              <input type="text" name="s" placeholder="Find Products">
-              <select name="product_cat" id="product_cat" class="postform">
-                <option value="0" selected="selected">All Categories</option>
-                <option class="level-0" value="programming">Programming</option>
-                <option class="level-0" value="javascript">Javascript</option>
-                <option class="level-0" value="web-application">Web Application</option>
-                <option class="level-0" value="html5">HTML5</option>
-                <option class="level-0" value="seo">SEO</option>
-                <option class="level-0" value="web-design">Web Design</option>
-              </select>
+        <app-find-product-form [title]="['Find', 'Product']"></app-find-product-form>
+        <app-product-categories></app-product-categories>
 
-              <select name="authors" id="authors" class="postform">
-                <option value="0" selected="selected">All Authors</option>
-                <option class="level-0" value="thoriq-firdaus">Thoriq Firdaus</option>
-                <option class="level-0" value="tim-kadlec">Tim Kadlec</option>
-                <option class="level-0" value="steve-krug">Steve Krug</option>
-                <option class="level-0" value="susan-weinschenk">Susan Weinschenk</option>
-                <option class="level-0" value="austin-kleon">Austin Kleon</option>
-                <option class="level-0" value="ellen-lupton">Ellen Lupton</option>
-                <option class="level-0" value="patrick-mcneil">Patrick McNeil</option>
-                <option class="level-0" value="brian-miller">Brian Miller</option>
-                <option class="level-0" value="kyle-simpson">Kyle Simpson</option>
-                <option class="level-0" value="nicholas-c-zakas">Nicholas C. Zakas</option>
-              </select>
-
-              <input type="submit" class="button" value="Search">
-              <input type="hidden" name="post_type" value="product">
-            </form>
-
-          </div>
-        </div>
-
-        <div class="widget woocommerce widget_product_categories" id="woocommerce_product_categories-2"><div class="widget_content"><h2 class="widget-title">Product Categories</h2><ul class="product-categories"><li class="cat-item cat-item-168"><a href="">HTML5</a></li><li class="cat-item cat-item-166"><a href="">Javascript</a></li><li class="cat-item cat-item-94"><a href="">Programming</a></li><li class="cat-item cat-item-169"><a href="">SEO</a></li><li class="cat-item cat-item-167"><a href="">Web Application</a></li><li class="cat-item cat-item-178"><a href="">Web Design</a></li></ul></div></div>
-
-<!--        TODO Здесь должен рандомно оставаться только один элемент: TOP RATED PRODUCTS или ONSALE PRODUCTS -->
-        <div class="widget woocommerce widget_products" id="woocommerce_products-6"><div class="widget_content"><h2 class="widget-title">Top Rated Products</h2><ul class="product_list_widget"><li><a href=""><img alt="" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" height="80" sizes="(max-width: 80px) 100vw, 80px" src="//tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book11-300-80x80.jpg" srcset="//tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book11-300-80x80.jpg 80w, //tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book11-300-150x150.jpg 150w, //tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book11-300-100x100.jpg 100w, //tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book11-300-136x136.jpg 136w, //tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book11-300-45x45.jpg 45w" width="80"><span class="product-title">Don't Make Me Think: A Common Sense Approach to Web Usability, 2nd Edition</span></a><del><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">£</span>540.00</span></del><ins><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">£</span>515.00</span></ins></li><li><a href=""><img alt="" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" height="80" sizes="(max-width: 80px) 100vw, 80px" src="//tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book1-600-80x80.jpg" srcset="//tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book1-600-80x80.jpg 80w, //tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book1-600-150x150.jpg 150w, //tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book1-600-100x100.jpg 100w, //tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book1-600-136x136.jpg 136w, //tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book1-600-45x45.jpg 45w" width="80"><span class="product-title">Thinking with Type, 2nd revised and expanded edition: A Critical Guide for Designers, Writers, Editors, &amp; Students</span></a><del><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">£</span>950.00</span></del><ins><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">£</span>900.00</span></ins></li><li><a href=""><img alt="" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" height="80" sizes="(max-width: 80px) 100vw, 80px" src="//tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book3-300-80x80.jpg" srcset="//tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book3-300-80x80.jpg 80w, //tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book3-300-150x150.jpg 150w, //tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book3-300-100x100.jpg 100w, //tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book3-300-136x136.jpg 136w, //tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book3-300-45x45.jpg 45w" width="80"><span class="product-title">HTML5 Cookbook (Oreilly Cookbooks)</span></a><del><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">£</span>820.25</span></del><ins><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">£</span>400.00</span></ins></li><li><a href=""><img alt="" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" height="80" sizes="(max-width: 80px) 100vw, 80px" src="//tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2012/12/book4-300-80x80.jpg" srcset="//tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2012/12/book4-300-80x80.jpg 80w, //tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2012/12/book4-300-150x150.jpg 150w, //tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2012/12/book4-300-100x100.jpg 100w, //tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2012/12/book4-300-136x136.jpg 136w, //tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2012/12/book4-300-45x45.jpg 45w" width="80"><span class="product-title">Maintainable JavaScript</span></a></li><li><a href=""><img alt="" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" height="80" sizes="(max-width: 80px) 100vw, 80px" src="//tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book12-300-80x80.jpg" srcset="//tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book12-300-80x80.jpg 80w, //tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book12-300-150x150.jpg 150w, //tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book12-300-100x100.jpg 100w, //tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book12-300-136x136.jpg 136w, //tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book12-300-45x45.jpg 45w" width="80"><span class="product-title">Above the Fold: Understanding the Principles of Successful Web Site Design</span></a></li></ul></div></div>
-        <div id="woocommerce_products-5" class="widget woocommerce widget_products">
-          <div class="widget_content"><h2 class="widget-title">Onsale Products</h2>
-            <ul class="product_list_widget">
-              <li>
-                <a href="http://tokokoodemo.us/papirus/books/product/professional-ajax-2nd-edition/">
-                  <img width="80" height="80"
-                       src="//tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book5-300-80x80.jpg"
-                       class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt=""
-                       srcset="//tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book5-300-80x80.jpg 80w, //tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book5-300-150x150.jpg 150w, //tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book5-300-100x100.jpg 100w, //tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book5-300-136x136.jpg 136w, //tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book5-300-45x45.jpg 45w"
-                       sizes="(max-width: 80px) 100vw, 80px"> <span
-                  class="product-title">Professional Ajax, 2nd Edition</span>
-                </a>
-                <del><span class="woocommerce-Price-amount amount"><span
-                  class="woocommerce-Price-currencySymbol">£</span>645.00</span></del>
-                <ins><span class="woocommerce-Price-amount amount"><span
-                  class="woocommerce-Price-currencySymbol">£</span>600.00</span></ins>
-              </li>
-
-              <li>
-                <a
-                  href="http://tokokoodemo.us/papirus/books/product/high-performance-javascript-build-faster-web-application-interfaces/">
-                  <img width="80" height="80"
-                       src="//tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book6-300-80x80.jpg"
-                       class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt=""
-                       srcset="//tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book6-300-80x80.jpg 80w, //tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book6-300-150x150.jpg 150w, //tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book6-300-100x100.jpg 100w, //tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book6-300-136x136.jpg 136w, //tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book6-300-45x45.jpg 45w"
-                       sizes="(max-width: 80px) 100vw, 80px"> <span class="product-title">High Performance JavaScript (Build Faster Web Application Interfaces)</span>
-                </a>
-                <del><span class="woocommerce-Price-amount amount"><span
-                  class="woocommerce-Price-currencySymbol">£</span>700.50</span></del>
-                <ins><span class="woocommerce-Price-amount amount"><span
-                  class="woocommerce-Price-currencySymbol">£</span>650.50</span></ins>
-              </li>
-
-              <li>
-                <a href="http://tokokoodemo.us/papirus/books/product/professional-javascript-for-web-developers/">
-                  <img width="80" height="80"
-                       src="//tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book7-300-80x80.jpg"
-                       class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt=""
-                       srcset="//tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book7-300-80x80.jpg 80w, //tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book7-300-150x150.jpg 150w, //tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book7-300-100x100.jpg 100w, //tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book7-300-136x136.jpg 136w, //tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book7-300-45x45.jpg 45w"
-                       sizes="(max-width: 80px) 100vw, 80px"> <span class="product-title">Professional JavaScript for Web Developers</span>
-                </a>
-                <del><span class="woocommerce-Price-amount amount"><span
-                  class="woocommerce-Price-currencySymbol">£</span>556.43</span></del>
-                <ins><span class="woocommerce-Price-amount amount"><span
-                  class="woocommerce-Price-currencySymbol">£</span>545.00</span></ins>
-              </li>
-
-              <li>
-                <a href="http://tokokoodemo.us/papirus/books/product/html5-cookbook-oreilly-cookbooks/">
-                  <img width="80" height="80"
-                       src="//tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book3-300-80x80.jpg"
-                       class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt=""
-                       srcset="//tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book3-300-80x80.jpg 80w, //tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book3-300-150x150.jpg 150w, //tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book3-300-100x100.jpg 100w, //tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book3-300-136x136.jpg 136w, //tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book3-300-45x45.jpg 45w"
-                       sizes="(max-width: 80px) 100vw, 80px"> <span class="product-title">HTML5 Cookbook (Oreilly Cookbooks)</span>
-                </a>
-                <del><span class="woocommerce-Price-amount amount"><span
-                  class="woocommerce-Price-currencySymbol">£</span>820.25</span></del>
-                <ins><span class="woocommerce-Price-amount amount"><span
-                  class="woocommerce-Price-currencySymbol">£</span>400.00</span></ins>
-              </li>
-
-              <li>
-                <a
-                  href="http://tokokoodemo.us/papirus/books/product/how-to-get-people-to-do-stuff-master-the-art-and-science-of-persuasion-and-motivation/">
-                  <img width="80" height="80"
-                       src="//tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book8-300-80x80.jpg"
-                       class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt=""
-                       srcset="//tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book8-300-80x80.jpg 80w, //tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book8-300-150x150.jpg 150w, //tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book8-300-100x100.jpg 100w, //tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book8-300-136x136.jpg 136w, //tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book8-300-45x45.jpg 45w"
-                       sizes="(max-width: 80px) 100vw, 80px"> <span class="product-title">How to Get People to Do Stuff: Master the art and science of persuasion and motivation</span>
-                </a>
-                <del><span class="woocommerce-Price-amount amount"><span
-                  class="woocommerce-Price-currencySymbol">£</span>670.00</span></del>
-                <ins><span class="woocommerce-Price-amount amount"><span
-                  class="woocommerce-Price-currencySymbol">£</span>650.00</span></ins>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="widget opening-hours" id="tokokoo_opening_hours_widget-2"><div class="widget_content"><h2 class="widget-title">BUSINESS HOURS</h2><ul class="no-list-style"><li><span class="day">Monday: </span>08:00AM - 05:00PM</li><li><span class="day">Wednesday: </span>08:00AM - 05:00PM</li><li><span class="day">Friday: </span>08:00AM - 05:00PM</li><li><span class="day">Saturday: </span>09:00AM - 10:00PM</li><li><span class="day">Sunday: </span>10:00AM - 12:00PM</li></ul></div></div>
-      </aside><!-- #sidebar-primary .aside -->
-
+        <!--        TODO Здесь должен рандомно оставаться только один элемент: TOP RATED PRODUCTS или ONSALE PRODUCTS -->
+        <app-products title="Top Rated Products" searchType="Top Rated"></app-products>
+        <app-products title="Onsale Products" searchType="Sale"></app-products>
+        <app-business-hours></app-business-hours>
+      </aside>
 
     </div>
   </div>

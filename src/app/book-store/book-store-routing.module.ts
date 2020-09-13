@@ -24,7 +24,7 @@ const routes: Routes = [
       {path: 'wishlist', component: WishlistComponent},
       {path: 'checkout', component: CheckoutComponent},
       {path: 'delivery', component: DeliveryComponent},
-      {path: 'my-account', component: MyAccountComponent},
+      {path: 'account', component: MyAccountComponent},
       {path: 'contact', component: ContactComponent},
       {path: 'faq', component: FaqComponent}
     ]

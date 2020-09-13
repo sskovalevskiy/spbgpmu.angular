@@ -479,8 +479,7 @@
                   40133</p>
                 <p></p>
 
-                <a href="tel:<p>022 - 2503530</p>
-" class="button tel">022 - 2503530</a>
+                <a href="tel:<p>022 - 2503530</p>" class="button tel">022 - 2503530</a>
 
               </div>
 
@@ -508,15 +507,13 @@
                         action="http://tokokoodemo.us/papirus/books/wp-admin/admin-ajax.php?action=ninja_forms_ajax_submit"
                         class="ninja-forms-form">
 
-                    <input type="hidden" id="_wpnonce" name="_wpnonce" value="40b1c852ef"><input type="hidden"
-                                                                                                 name="_wp_http_referer"
-                                                                                                 value="/papirus/books/contact/">
+                    <input type="hidden" id="_wpnonce" name="_wpnonce" value="40b1c852ef">
+                    <input type="hidden" name="_wp_http_referer" value="/papirus/books/contact/">
                     <input type="hidden" name="_ninja_forms_display_submit" value="1">
                     <input type="hidden" name="_form_id" id="_form_id" value="2">
                     <div class="hp-wrap">
-                      <label>If you are a human and are seeing this field, please leave it blank. <input type="text"
-                                                                                                         value=""
-                                                                                                         name="_nINhD">
+                      <label>If you are a human and are seeing this field, please leave it blank.
+                        <input type="text" value="" name="_nINhD">
                         <input type="hidden" value="_nINhD" name="_hp_name">
                       </label>
                     </div>
@@ -584,55 +581,9 @@
 
       <!-- Begin Sidebar -->
       <aside class="sidebar col-md-3">
-        <div id="tokokoo_opening_hours_widget-2" class="widget opening-hours">
-          <div class="widget_content"><h2 class="widget-title">BUSINESS HOURS</h2>
-            <ul class="no-list-style">
-              <li><span class="day">Monday: </span>08:00AM - 05:00PM</li>
-              <li><span class="day">Wednesday: </span>08:00AM - 05:00PM</li>
-              <li><span class="day">Friday: </span>08:00AM - 05:00PM</li>
-              <li><span class="day">Saturday: </span>09:00AM - 10:00PM</li>
-              <li><span class="day">Sunday: </span>10:00AM - 12:00PM</li>
-            </ul>
-          </div>
-        </div>
-        <div id="search-3" class="widget widget_search">
-          <div class="widget_content">
-            <div class="searchform">
-              <form method="get" action="http://tokokoodemo.us/papirus/books/" role="search">
-                <input type="text" class="field txt search_input" name="s"
-                       placeholder="Type a keywords and hit Enter …">
-                <input type="submit" class="searchsubmit" value="Search">
-              </form>
-            </div><!-- .searchform -->
-
-          </div>
-        </div>
-        <div id="woocommercemyaccountwidget-2" class="widget WooCommerceMyAccountWidget">
-          <div class="widget_content">
-            <div class="logout"><h2 class="widget-title">Customer Login</h2>
-              <form name="wma_login_form" id="wma_login_form" action="http://tokokoodemo.us/papirus/books/wp-login.php"
-                    method="post">
-
-                <p class="login-username">
-                  <label for="user_login">Username</label>
-                  <input type="text" name="log" id="user_login" class="input" value="" size="20">
-                </p>
-                <p class="login-password">
-                  <label for="user_pass">Password</label>
-                  <input type="password" name="pwd" id="user_pass" class="input" value="" size="20">
-                </p>
-
-
-                <p class="login-submit">
-                  <input type="submit" name="wp-submit" id="wp-submit" class="button button-primary" value="Log In">
-                  <input type="hidden" name="redirect_to" value="http://tokokoodemo.us/papirus/books/contact/">
-                </p>
-
-              </form>
-              <a class="woo-ma-link woo-ma-lost-pass"
-                 href="http://tokokoodemo.us/papirus/books/my-account/lost-password/">Lost password?</a></div>
-          </div>
-        </div>
+        <app-search-form></app-search-form>
+        <app-business-hours></app-business-hours>
+        <app-customer-login></app-customer-login>
       </aside>
       <!-- End Sidebar -->
     </div>
