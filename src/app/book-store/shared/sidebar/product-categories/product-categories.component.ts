@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductCategoriesComponent implements OnInit {
 
+  categories: string[] = ["Programming","Javascript","Web Application", "HTML5", "SEO", "Web Design"];
+
   constructor() { }
 
   ngOnInit() {

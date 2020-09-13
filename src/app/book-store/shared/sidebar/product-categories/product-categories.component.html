@@ -1,12 +1,10 @@
-<div id="woocommerce_product_categories-2" class="widget woocommerce widget_product_categories">
-  <div class="widget_content"><h2 class="widget-title">Product Categories</h2>
-    <ul class="product-categories">
-      <li class="cat-item cat-item-168"><a href="">HTML5</a></li>
-      <li class="cat-item cat-item-166"><a href="">Javascript</a></li>
-      <li class="cat-item cat-item-94"><a href="">Programming</a></li>
-      <li class="cat-item cat-item-169"><a href="">SEO</a></li>
-      <li class="cat-item cat-item-167"><a href="">Web Application</a></li>
-      <li class="cat-item cat-item-178"><a href="">Web Design</a></li>
+<div class="widget">
+  <div class="widget_content">
+    <h2 class="widget-title">Product Categories</h2>
+    <ul>
+      <li *ngFor="let category of categories; let i = index">
+        <a [routerLink]="'.'" [queryParams]="{category:i}">{{category}}</a>
+      </li>
     </ul>
   </div>
 </div>
