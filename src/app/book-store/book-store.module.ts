@@ -29,6 +29,7 @@ import {ProductCategoriesComponent} from './shared/sidebar/product-categories/pr
 import {ProductsComponent} from './shared/sidebar/products/products.component';
 import {FindProductFormComponent} from './shared/sidebar/find-product-form/find-product-form.component';
 import {SearchFormComponent} from "./shared/sidebar/search-form/search-form.component";
+import {BookService} from "./services/book.service";
 
 @NgModule({
   declarations: [
@@ -63,7 +64,8 @@ import {SearchFormComponent} from "./shared/sidebar/search-form/search-form.comp
   imports: [
     CommonModule,
     BookStoreRoutingModule
-  ]
+  ],
+  providers: [BookService]
 })
 export class BookStoreModule {
 }
