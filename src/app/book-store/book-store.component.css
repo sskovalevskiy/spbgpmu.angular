@@ -10012,7 +10012,7 @@ p.stock {
   display: table
 }
 
-.product_details_content + .button.wcxp-quick-view-button, .post .post_details .product_details_content + .wcxp-quick-view-button.more-link, .woocommerce-tabs .tabs .product_details_content + li.wcxp-quick-view-button, .single-product .col-md-7 .product_details_content + .wcxp-quick-view-button.add_to_wishlist, .col2-set .col-1 .product_details_content + a.wcxp-quick-view-button.edit, .col2-set .col-2 .product_details_content + a.wcxp-quick-view-button.edit, .col2-set#customer_login .lost_password .product_details_content + a.wcxp-quick-view-button, .product_details_content + .wcxp-quick-view-button.vc_read_more {
+.product_details_content + .button.quick-view-button, .post .post_details .product_details_content + .quick-view-button.more-link, .woocommerce-tabs .tabs .product_details_content + li.quick-view-button, .single-product .col-md-7 .product_details_content + .quick-view-button.add_to_wishlist, .col2-set .col-1 .product_details_content + a.quick-view-button.edit, .col2-set .col-2 .product_details_content + a.quick-view-button.edit, .col2-set#customer_login .lost_password .product_details_content + a.quick-view-button, .product_details_content + .quick-view-button.vc_read_more {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -10026,11 +10026,11 @@ p.stock {
   cursor: pointer
 }
 
-.featured-image-holder > a.wcxp-quick-view-button {
+.featured-image-holder > a.quick-view-button {
   display: none
 }
 
-.featured-image-holder > a.wcxp-quick-view-button span {
+.featured-image-holder > a.quick-view-button span {
   display: none
 }
 
@@ -10038,7 +10038,7 @@ p.stock {
   position: relative
 }
 
-.featured-image-holder:hover > a.wcxp-quick-view-button {
+.featured-image-holder:hover > a.quick-view-button {
   display: block;
   margin: auto !important;
   width: 150px;
@@ -10096,11 +10096,11 @@ button.wpb_button {
   font-weight: 700
 }
 
-.featured-image-holder > a.wcxp-quick-view-button {
+.featured-image-holder > a.quick-view-button {
   display: none
 }
 
-.featured-image-holder > a.wcxp-quick-view-button span {
+.featured-image-holder > a.quick-view-button span {
   display: none
 }
 
@@ -10108,7 +10108,7 @@ button.wpb_button {
   position: relative
 }
 
-.featured-image-holder:hover > a.wcxp-quick-view-button {
+.featured-image-holder:hover > a.quick-view-button {
   display: block;
   margin: auto !important;
   width: 100px;
