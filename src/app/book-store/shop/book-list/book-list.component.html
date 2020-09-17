@@ -5,13 +5,13 @@
     <div class="row">
       <section class="col-md-9">
         <nav class="filterable_nav">
-          <a class="current" href="#" data-filter="*">Все</a>
-          <a href="#" data-filter=".graphic-design" class="">Неонатология</a>
-          <a href="#" data-filter=".illustration" class="">Аллергология</a>
-          <a href="#" data-filter=".web-development" class="">Педиатрия</a>
-          <a href="#" data-filter=".web-development" class="">Кардиохирургия</a>
-          <a href="#" data-filter=".web-development" class="">Нейрохирургия</a>
-          <a href="#" data-filter=".web-development" class="">Прочие</a>
+          <a  routerLink="." routerLinkActive="current" [queryParams]="{category:'Books'}">Все</a>
+          <a  routerLink="." routerLinkActive="current" [queryParams]="{category:'Neonatology'}">Неонатология</a>
+          <a  routerLink="." routerLinkActive="current" [queryParams]="{category:'Allergology'}">Аллергология</a>
+          <a  routerLink="." routerLinkActive="current" [queryParams]="{category:'Pediatrics'}">Педиатрия</a>
+          <a  routerLink="." routerLinkActive="current" [queryParams]="{category:'Cardiac-surgery'}">Кардиохирургия</a>
+          <a  routerLink="." routerLinkActive="current" [queryParams]="{category:'Neurosurgery'}">Нейрохирургия</a>
+          <a  routerLink="." routerLinkActive="current" [queryParams]="{category:'Other'}">Прочие</a>
         </nav>
 
         <div class="featured_book">
@@ -29,185 +29,45 @@
               </select>
             </form>
           </div>
-          <div
-            class="post-2035 product type-product status-publish has-post-thumbnail authors-ellen-lupton publisher-princeton-architectural-press product_cat-html5 product_cat-web-application product_tag-design product_tag-designer product_tag-newbie product_tag-responsive product_tag-tutorial product_tag-web product_tag-web-design-2 first instock sale shipping-taxable purchasable product-type-simple"
-            style="border-bottom: 1px solid #3c3c3c;">
-            <span class="onsale">Sale!</span>
+          <div *ngFor="let book of books" class="product" style="border-bottom: 1px solid #3c3c3c;">
+            <span *ngIf="book.sale" class="onsale">Sale!</span>
             <figure class="col-md-5 featured-image-holder">
-              <a href="" title="">
-                <img alt="" class="tokokoo-featured-product"
-                     src="http://tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book1-600.jpg">
+              <a routerLink="/books/shop" [queryParams]="{id: book.id}" title="{{book.title}}">
+                <img alt="{{book.imgAlt}}" src="{{book.imgSrc}}">
               </a>
-              <a class="button wcxp-quick-view-button" href="" title="">
-                <span></span>Quick View</a></figure>
+              <a class="button quick-view-button">Quick View</a>
+            </figure>
             <div class="product_desc col-md-5">
-              <p class="author">By
-                <a href="">Ellen Lupton</a>
-              </p>
+              <p class="author">By <a href="">{{book.author}}</a></p>
               <h3 class="item-title">
-                <a href="" title="">
-                  Thinking with Type, 2nd revised and expanded edition: A Critical Guide for Designers, Writers,
-                  Editors, &amp; Students</a></h3> Our all time best selling book is now available in a revised and
-              expanded second edition.&nbsp;Thinking with Type&nbsp;is the definitive guide to using typography in
-              visual communication, from the printed page to the computer screen. This revised edition includes
-              forty-eight pages of new
-              content, including the latest information on style sheets for print and the web, the use of ornaments…
+                <a routerLink="/books/shop" [queryParams]="{id: book.id}" title="{{book.title}}">{{book.title}}</a>
+              </h3>
+              {{book.description}}
             </div>
-            <div class="product_details col-md-2"><span class="price"><del
-            ><span class="woocommerce-Price-amount amount"><span
-              class="woocommerce-Price-currencySymbol">£</span>950.00</span></del><ins
-            ><span class="woocommerce-Price-amount amount"><span
-              class="woocommerce-Price-currencySymbol">£</span>900.00</span></ins></span><span
-              class="cats"><a
-              href="http://tokokoodemo.us/papirus/books/product-category/html5/">HTML5, </a><a
-              href="http://tokokoodemo.us/papirus/books/product-category/web-application/">Web Application</a></span><a
-              class="button product_type_simple add_to_cart_button ajax_add_to_cart"
-              data-product_id="2035" data-product_sku="124BG87" data-quantity="1"
-              href="/papirus/books/product-category/web-design/?add-to-cart=2035" rel="nofollow">Add to cart</a>
-              <p></p>
-              <div class="yith-wcwl-add-to-wishlist add-to-wishlist-2035">
-                <div class="yith-wcwl-add-button show" style="display:block"><a
-                  class="add_to_wishlist" data-product-id="2035" data-product-type="simple"
-                  href="/papirus/books/product-category/web-design/?add_to_wishlist=2035" rel="nofollow"> Add to
-                  Wishlist</a><img alt="loading" class="ajax-loading" height="16"
-                                   src="http://tokokoodemo.us/papirus/books/wp-content/plugins/yith-woocommerce-wishlist/assets/images/wpspin_light.gif"
-                                   style="visibility:hidden" width="16"></div>
-                <div class="yith-wcwl-wishlistaddedbrowse hide" style="display:none;"><span
-                  class="feedback">Product added!</span><a
-                  href="http://tokokoodemo.us/papirus/books/wishlist/"
-                  rel="nofollow"> Browse Wishlist </a>
-                </div>
-                <div class="yith-wcwl-wishlistexistsbrowse hide" style="display:none"><span
-                  class="feedback">The product is already in the wishlist!</span><a
-                  href="http://tokokoodemo.us/papirus/books/wishlist/" rel="nofollow"> Browse
-                  Wishlist </a></div>
-                <div style="clear:both"></div>
-                <div class="yith-wcwl-wishlistaddresponse"></div>
-              </div>
-              <div class="clear"></div>
-              <p></p></div>
-          </div>
-          <div
-            class="post-2035 product type-product status-publish has-post-thumbnail authors-ellen-lupton publisher-princeton-architectural-press product_cat-html5 product_cat-web-application product_tag-design product_tag-designer product_tag-newbie product_tag-responsive product_tag-tutorial product_tag-web product_tag-web-design-2 first instock sale shipping-taxable purchasable product-type-simple"
-            style="
-    border-bottom: 1px solid #3c3c3c;
-"><span class="onsale">Sale!</span>
-            <figure class="col-md-5 featured-image-holder"><a
-              href="http://tokokoodemo.us/papirus/books/product/thinking-with-type-2nd-revised-and-expanded-edition-a-critical-guide-for-designers-writers-editors-students/"
-              title="Thinking with Type, 2nd revised and expanded edition: A Critical Guide for Designers, Writers, Editors, &amp; Students"><img
+            <div class="product_details col-md-2">
+              <span class="price">
+                <del *ngIf="book.oldPrice">£ {{book.oldPrice}}</del>
+                <ins>£ {{book.price}}</ins>
+              </span>
+              <span class="cats">
+                <a href="">{{book.category[0]}}</a>
+              </span>
+              <a *ngIf="!book.isInCart" class="button add_to_cart added" href="" rel="nofollow">Add to cart</a>
+              <a *ngIf="book.isInCart" routerLink="/books/wishlist" class="added_to_cart" title="View cart">View
+                cart</a>
 
-              alt="Thinking with Type, 2nd revised and expanded edition: A Critical Guide for Designers, Writers, Editors, &amp; Students"
-              class="tokokoo-featured-product"
-              src="http://tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book1-600.jpg"></a><a
-              class="button wcxp-quick-view-button"
-              href="http://tokokoodemo.us/papirus/books/?wc-api=wcxp_quick_view&amp;product=2035&amp;ajax=true"
-              title="Thinking with Type, 2nd revised and expanded edition: A Critical Guide for Designers, Writers, Editors, &amp; Students"><span
-            ></span>Quick View</a></figure>
-            <div class="product_desc col-md-5"><p class="author">By <a
-              href="http://tokokoodemo.us/papirus/books/authors/ellen-lupton/">Ellen Lupton</a></p>
-              <h3 class="item-title"><a
-                href="http://tokokoodemo.us/papirus/books/product/thinking-with-type-2nd-revised-and-expanded-edition-a-critical-guide-for-designers-writers-editors-students/"
-                title="Thinking with Type, 2nd revised and expanded edition: A Critical Guide for Designers, Writers, Editors, &amp; Students">Thinking
-                with Type, 2nd revised and expanded edition: A Critical Guide for Designers, Writers, Editors, &amp;
-                Students</a></h3> Our all time best selling book is now available in a revised and expanded second
-              edition.&nbsp;Thinking with Type&nbsp;is the definitive guide to using typography in visual communication,
-              from the printed page to the computer screen. This revised edition includes forty-eight pages of new
-              content, including the latest information on style sheets for print and the web, the use of ornaments…
-            </div>
-            <div class="product_details col-md-2"><span class="price"><del
-            ><span class="woocommerce-Price-amount amount"><span
-              class="woocommerce-Price-currencySymbol">£</span>950.00</span></del><ins
-            ><span class="woocommerce-Price-amount amount"><span
-              class="woocommerce-Price-currencySymbol">£</span>900.00</span></ins></span><span
-              class="cats"><a
-              href="http://tokokoodemo.us/papirus/books/product-category/html5/">HTML5, </a><a
-              href="http://tokokoodemo.us/papirus/books/product-category/web-application/">Web Application</a></span><a
-              class="button product_type_simple add_to_cart_button ajax_add_to_cart"
-              data-product_id="2035" data-product_sku="124BG87" data-quantity="1"
-              href="/papirus/books/product-category/web-design/?add-to-cart=2035" rel="nofollow">Add to cart</a>
-              <p></p>
-              <div class="yith-wcwl-add-to-wishlist add-to-wishlist-2035">
-                <div class="yith-wcwl-add-button show" style="display:block"><a
-                  class="add_to_wishlist" data-product-id="2035" data-product-type="simple"
-                  href="/papirus/books/product-category/web-design/?add_to_wishlist=2035" rel="nofollow"> Add to
-                  Wishlist</a><img alt="loading" class="ajax-loading" height="16"
-                                   src="http://tokokoodemo.us/papirus/books/wp-content/plugins/yith-woocommerce-wishlist/assets/images/wpspin_light.gif"
-                                   style="visibility:hidden" width="16"></div>
-                <div class="yith-wcwl-wishlistaddedbrowse hide" style="display:none;"><span
-                  class="feedback">Product added!</span><a
-                  href="http://tokokoodemo.us/papirus/books/wishlist/"
-                  rel="nofollow"> Browse Wishlist </a>
-                </div>
-                <div class="yith-wcwl-wishlistexistsbrowse hide" style="display:none"><span
-                  class="feedback">The product is already in the wishlist!</span><a
-                  href="http://tokokoodemo.us/papirus/books/wishlist/" rel="nofollow"> Browse
-                  Wishlist </a></div>
-                <div style="clear:both"></div>
-                <div class="yith-wcwl-wishlistaddresponse"></div>
+              <div *ngIf="!book.isInWishlist" class="yith-wcwl-add-button show">
+                <a class="add_to_wishlist" href="" rel="nofollow">Add to Wishlist</a>
               </div>
-              <div class="clear"></div>
-              <p></p></div>
-          </div>
-          <div
-            class="post-2035 product type-product status-publish has-post-thumbnail authors-ellen-lupton publisher-princeton-architectural-press product_cat-html5 product_cat-web-application product_tag-design product_tag-designer product_tag-newbie product_tag-responsive product_tag-tutorial product_tag-web product_tag-web-design-2 first instock sale shipping-taxable purchasable product-type-simple"
-            style="
-    border-bottom: 1px solid #3c3c3c;
-"><span class="onsale">Sale!</span>
-            <figure class="col-md-5 featured-image-holder"><a
-              href="http://tokokoodemo.us/papirus/books/product/thinking-with-type-2nd-revised-and-expanded-edition-a-critical-guide-for-designers-writers-editors-students/"
-              title="Thinking with Type, 2nd revised and expanded edition: A Critical Guide for Designers, Writers, Editors, &amp; Students"><img
-
-              alt="Thinking with Type, 2nd revised and expanded edition: A Critical Guide for Designers, Writers, Editors, &amp; Students"
-              class="tokokoo-featured-product"
-              src="http://tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book1-600.jpg"></a><a
-              class="button wcxp-quick-view-button"
-              href="http://tokokoodemo.us/papirus/books/?wc-api=wcxp_quick_view&amp;product=2035&amp;ajax=true"
-              title="Thinking with Type, 2nd revised and expanded edition: A Critical Guide for Designers, Writers, Editors, &amp; Students"><span
-            ></span>Quick View</a></figure>
-            <div class="product_desc col-md-5"><p class="author">By <a
-              href="http://tokokoodemo.us/papirus/books/authors/ellen-lupton/">Ellen Lupton</a></p>
-              <h3 class="item-title"><a
-                href="http://tokokoodemo.us/papirus/books/product/thinking-with-type-2nd-revised-and-expanded-edition-a-critical-guide-for-designers-writers-editors-students/"
-                title="Thinking with Type, 2nd revised and expanded edition: A Critical Guide for Designers, Writers, Editors, &amp; Students">Thinking
-                with Type, 2nd revised and expanded edition: A Critical Guide for Designers, Writers, Editors, &amp;
-                Students</a></h3> Our all time best selling book is now available in a revised and expanded second
-              edition.&nbsp;Thinking with Type&nbsp;is the definitive guide to using typography in visual communication,
-              from the printed page to the computer screen. This revised edition includes forty-eight pages of new
-              content, including the latest information on style sheets for print and the web, the use of ornaments…
-            </div>
-            <div class="product_details col-md-2"><span class="price"><del
-            ><span class="woocommerce-Price-amount amount"><span
-              class="woocommerce-Price-currencySymbol">£</span>950.00</span></del><ins
-            ><span class="woocommerce-Price-amount amount"><span
-              class="woocommerce-Price-currencySymbol">£</span>900.00</span></ins></span><span
-              class="cats"><a
-              href="http://tokokoodemo.us/papirus/books/product-category/html5/">HTML5, </a><a
-              href="http://tokokoodemo.us/papirus/books/product-category/web-application/">Web Application</a></span><a
-              class="button product_type_simple add_to_cart_button ajax_add_to_cart"
-              data-product_id="2035" data-product_sku="124BG87" data-quantity="1"
-              href="/papirus/books/product-category/web-design/?add-to-cart=2035" rel="nofollow">Add to cart</a>
-              <p></p>
-              <div class="yith-wcwl-add-to-wishlist add-to-wishlist-2035">
-                <div class="yith-wcwl-add-button show" style="display:block"><a
-                  class="add_to_wishlist" data-product-id="2035" data-product-type="simple"
-                  href="/papirus/books/product-category/web-design/?add_to_wishlist=2035" rel="nofollow"> Add to
-                  Wishlist</a><img alt="loading" class="ajax-loading" height="16"
-                                   src="http://tokokoodemo.us/papirus/books/wp-content/plugins/yith-woocommerce-wishlist/assets/images/wpspin_light.gif"
-                                   style="visibility:hidden" width="16"></div>
-                <div class="yith-wcwl-wishlistaddedbrowse hide" style="display:none;"><span
-                  class="feedback">Product added!</span><a
-                  href="http://tokokoodemo.us/papirus/books/wishlist/"
-                  rel="nofollow"> Browse Wishlist </a>
-                </div>
-                <div class="yith-wcwl-wishlistexistsbrowse hide" style="display:none"><span
-                  class="feedback">The product is already in the wishlist!</span><a
-                  href="http://tokokoodemo.us/papirus/books/wishlist/" rel="nofollow"> Browse
-                  Wishlist </a></div>
-                <div style="clear:both"></div>
-                <div class="yith-wcwl-wishlistaddresponse"></div>
+              <div style="display:none;">
+                <span class="feedback">Product added!</span>
+                <a routerLink="/books/wishlist">Browse Wishlist</a>
               </div>
-              <div class="clear"></div>
-              <p></p></div>
+              <div *ngIf="book.isInWishlist">
+                <span class="feedback">The product is already in the wishlist!</span>
+                <a routerLink="/books/wishlist">Browse Wishlist</a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -215,18 +75,18 @@
         <app-find-product-form></app-find-product-form>
         <app-product-categories></app-product-categories>
 
-        <!--        TODO Здесь должен рандомно оставаться только один элемент: TOP RATED PRODUCTS или ONSALE PRODUCTS -->
+        <!-- TODO Здесь должен рандомно оставаться только один элемент: TOP RATED PRODUCTS или ONSALE PRODUCTS -->
         <app-products title="Top Rated Products" searchType="Top Rated"></app-products>
         <app-products title="Onsale Products" searchType="Sale"></app-products>
         <app-business-hours></app-business-hours>
       </aside>
       <nav class="pagination loop-pagination col-md-9">
-        <a class="prev page-numbers" href="">Previous</a>
+        <a class="prev page-numbers">Previous</a>
         <span style="margin-right: 5rem">Showing 1–9 of 19 results</span>
         <span class="page-numbers current">1</span>
-        <a class="page-numbers" href="">2</a>
-        <a class="page-numbers" href="">3</a>
-        <a class="next page-numbers" href="">Next</a></nav>
+        <a class="page-numbers">2</a>
+        <a class="page-numbers">3</a>
+        <a class="next page-numbers">Next</a></nav>
     </div>
   </div>
 </div>
