@@ -6,6 +6,7 @@ const booksList = [
     1,
     'Thinking with Type, 2nd revised and expanded edition: A Critical Guide for Designers, Writers, Editors, &amp; Students',
     'http://tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book1-600.jpg',
+    [],
     '',
     'Ellen Lupton',
     'Our all time best selling book is now available in a revised and expanded second edition.&nbsp;Thinking with Type&nbsp;is the definitive guide to using typography in visual communication, from the printed page to the computer screen. This revised edition includes forty-eight pages of new content, including the latest information on style sheets for print and the web, the use of ornaments…',
@@ -13,6 +14,7 @@ const booksList = [
     false,
     false,
     true,
+    '',
     900,
     950
   ),
@@ -20,6 +22,7 @@ const booksList = [
     2,
     'Thinking with Type, 2nd revised and expanded edition: A Critical Guide for Designers, Writers, Editors, &amp; Students',
     'http://tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book1-600.jpg',
+    [],
     '',
     'Ellen Lupton',
     'Our all time best selling book is now available in a revised and expanded second edition.&nbsp;Thinking with Type&nbsp;is the definitive guide to using typography in visual communication, from the printed page to the computer screen. This revised edition includes forty-eight pages of new content, including the latest information on style sheets for print and the web, the use of ornaments…',
@@ -27,6 +30,7 @@ const booksList = [
     false,
     true,
     false,
+    '',
     900
   )
 ];

@@ -3,6 +3,7 @@ export class Book {
     public id: number = null,
     public title: string = '',
     public imgSrc: string = '',
+    public imgSrcset: string[],
     public imgAlt: string = '',
     public author: string = '',
     public description: string = '',
@@ -10,6 +11,7 @@ export class Book {
     public isInCart: boolean = false,
     public isInWishlist: boolean = false,
     public sale: boolean = false,
+    public stockAmount: string,
     public price: number = 0,
     public oldPrice?: number
   ) {

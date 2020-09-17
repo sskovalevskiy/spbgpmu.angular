@@ -7,7 +7,7 @@
         <div class="posts">
           <article class="row">
             <!-- WISHLIST TABLE -->
-            <form id="yith-wcwl-form" action="" method="post" class="woocommerce">
+            <form action="" method="post" class="woocommerce">
               <table class="shop_table">
                 <thead>
                 <tr>
@@ -20,154 +20,38 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                  <td class="product-remove">
-                    <div>
-                      <a href="" class="remove remove_from_wishlist" title="Remove this product">×</a>
-                    </div>
-                  </td>
+                <tr *ngFor="let book of books">
+                  <td class="product-remove"><a class="remove" title="Remove this product">×</a></td>
                   <td class="product-thumbnail">
-                    <a href="">
-                      <img width="80" height="80"
-                           src="//tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book5-300-80x80.jpg"
-                           class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt=""
-                           srcset="//tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book5-300-80x80.jpg 80w, //tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book5-300-150x150.jpg 150w, //tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book5-300-100x100.jpg 100w, //tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book5-300-136x136.jpg 136w, //tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book5-300-45x45.jpg 45w"
-                           sizes="(max-width: 80px) 100vw, 80px"> </a>
+                    <img width="80" height="80"
+                         src="{{book.imgSrc}}"
+                         srcset="{{book.imgSrcset[0]}}"
+                         sizes="(max-width: 80px) 100vw, 80px">
                   </td>
                   <td class="product-name">
-                    <a href="">Professional Ajax, 2nd Edition</a>
+                    <a routerLink="/books/product" [queryParams]="{id:book.id}">{{book.title}}</a>
                   </td>
                   <td class="product-price">
-                    <del><span class="woocommerce-Price-amount amount"><span
-                      class="woocommerce-Price-currencySymbol">£</span>645.00</span>
-                    </del>
-                    <ins><span class="woocommerce-Price-amount amount"><span
-                      class="woocommerce-Price-currencySymbol">£</span>600.00</span>
-                    </ins>
+                    <del *ngIf="book.oldPrice">£ {{book.oldPrice}}</del>
+                    <ins>£ {{book.price}}</ins>
                   </td>
-
-                  <td class="product-stock-status">
-                    <span class="wishlist-in-stock">In Stock</span></td>
-
-                  <td class="product-add-to-cart">
-                    <!-- Date added -->
-
-                    <!-- Add to cart button -->
-                    <a rel="nofollow"
-                       href="/papirus/books/wishlist/?add-to-cart=2149&amp;remove_from_wishlist_after_add_to_cart=2149"
-                       data-quantity="1" data-product_id="2149" data-product_sku="124BG74"
-                       class="button product_type_simple add_to_cart_button ajax_add_to_cart add_to_cart button alt">
-                      Add to Cart</a>
-                    <!-- Change wishlist -->
-
-                  </td>
-                </tr>
-
-                <!-- Следующие две строки удалятся, ибо будет ngFor -->
-                <tr>
-
-                  <td class="product-remove">
-                    <div>
-                      <a href="/papirus/books/wishlist/?remove_from_wishlist=2062" class="remove remove_from_wishlist"
-                         title="Remove this product">×</a>
-                    </div>
-                  </td>
-
-                  <td class="product-thumbnail">
-                    <a
-                      href="http://tokokoodemo.us/papirus/books/product/above-the-fold-understanding-the-principles-of-successful-web-site-design/">
-                      <img width="80" height="80"
-                           src="//tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book12-300-80x80.jpg"
-                           class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt=""
-                           srcset="//tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book12-300-80x80.jpg 80w, //tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book12-300-150x150.jpg 150w, //tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book12-300-100x100.jpg 100w, //tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book12-300-136x136.jpg 136w, //tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2014/05/book12-300-45x45.jpg 45w"
-                           sizes="(max-width: 80px) 100vw, 80px"> </a>
-                  </td>
-
-                  <td class="product-name">
-                    <a
-                      href="http://tokokoodemo.us/papirus/books/product/above-the-fold-understanding-the-principles-of-successful-web-site-design/">Above
-                      the Fold: Understanding the Principles of Successful Web Site Design</a>
-                  </td>
-
-                  <td class="product-price">
-                    Free!
-                  </td>
-
-                  <td class="product-stock-status">
-                    <span class="wishlist-in-stock">In Stock</span></td>
-
-                  <td class="product-add-to-cart">
-                    <!-- Date added -->
-
-                    <!-- Add to cart button -->
-                    <a rel="nofollow"
-                       href="http://tokokoodemo.us/papirus/books/product/above-the-fold-understanding-the-principles-of-successful-web-site-design/?remove_from_wishlist_after_add_to_cart=2062"
-                       data-quantity="1" data-product_id="2062" data-product_sku="124BG90"
-                       class="button product_type_grouped add_to_cart button alt"> Add to Cart</a>
-                    <!-- Change wishlist -->
-
-                    <!-- Remove from wishlist -->
-                  </td>
-                </tr>
-                <tr>
-
-                  <td class="product-remove">
-                    <div>
-                      <a href="/papirus/books/wishlist/?remove_from_wishlist=2028" class="remove remove_from_wishlist"
-                         title="Remove this product">×</a>
-                    </div>
-                  </td>
-
-                  <td class="product-thumbnail">
-                    <a
-                      href="http://tokokoodemo.us/papirus/books/product/100-things-every-designer-needs-to-know-about-people-voices-that-matter-2/">
-                      <img width="80" height="80"
-                           src="//tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2012/12/book16-300-80x80.jpg"
-                           class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt=""
-                           srcset="//tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2012/12/book16-300-80x80.jpg 80w, //tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2012/12/book16-300-150x150.jpg 150w, //tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2012/12/book16-300-100x100.jpg 100w, //tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2012/12/book16-300-136x136.jpg 136w, //tokokoodemo.us/papirus/books/wp-content/uploads/sites/2/2012/12/book16-300-45x45.jpg 45w"
-                           sizes="(max-width: 80px) 100vw, 80px"> </a>
-                  </td>
-
-                  <td class="product-name">
-                    <a
-                      href="http://tokokoodemo.us/papirus/books/product/100-things-every-designer-needs-to-know-about-people-voices-that-matter-2/">100
-                      Things Every Designer Needs to Know About People (Voices That Matter)</a>
-                  </td>
-
-                  <td class="product-price">
-                    Free!
-                  </td>
-
-                  <td class="product-stock-status">
-                    <span class="wishlist-in-stock">In Stock</span></td>
-
-                  <td class="product-add-to-cart">
-                    <!-- Date added -->
-
-                    <!-- Add to cart button -->
-                    <a rel="nofollow"
-                       href="http://tokokoodemo.us/papirus/books/product/100-things-every-designer-needs-to-know-about-people-voices-that-matter-2/?remove_from_wishlist_after_add_to_cart=2028"
-                       data-quantity="1" data-product_id="2028" data-product_sku="124BG86"
-                       class="button product_type_grouped add_to_cart button alt"> Add to Cart</a>
-                    <!-- Change wishlist -->
-
-                    <!-- Remove from wishlist -->
+                  <td class="product-stock-status">{{book.stockAmount}}</td>
+                  <td class="product-add-to-cart"><a class="button">Add to Cart</a>
                   </td>
                 </tr>
                 </tbody>
 
                 <!-- Не ясно, зачем может быть нужет tfoot, оставлю временно -->
-                <tfoot>
-                <tr>
-                  <td colspan="6"></td>
-                </tr>
-                </tfoot>
-
+                <!--                <tfoot>-->
+                <!--                <tr>-->
+                <!--                  <td colspan="6"></td>-->
+                <!--                </tr>-->
+                <!--                </tfoot>-->
               </table>
             </form>
           </article>
-        </div><!-- #content -->
-      </section><!-- End #primary .content-area -->
+        </div>
+      </section>
 
       <!-- Begin Sidebar -->
       <aside class="sidebar col-md-3">
