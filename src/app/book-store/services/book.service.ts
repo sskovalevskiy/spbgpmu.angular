@@ -56,7 +56,7 @@ export class BookService {
 
   getBook(id: number | string): Promise<Book>{
     return this.getBooks()
-      .then(tasks => tasks.find(task => task.id === +id))
+      .then(books => books.find(book => book.id === +id))
       .catch(() => Promise.reject('Error in getBook() method'))
   }
 
