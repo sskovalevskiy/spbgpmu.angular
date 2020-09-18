@@ -5,7 +5,7 @@
       <input type="text" placeholder="Find Products">
       <select id="category">
         <option value="0" selected="selected">All Categories</option>
-        <option *ngFor="let category of categories; let i = index" [value]="i+1">{{category}}</option>
+        <option *ngFor="let category of categories; let i = index" [value]="i+1">{{category.name}}</option>
       </select>
 
       <select id="authors">
@@ -15,6 +15,5 @@
 
       <input type="submit" class="button" value="Search">
     </form>
-
   </div>
 </div>
