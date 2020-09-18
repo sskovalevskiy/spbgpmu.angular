@@ -2,8 +2,10 @@
   <div class="widget_content">
     <h2 class="widget-title">Product Categories</h2>
     <ul>
+<!--      TODO Сделать вывод списка категорий(тем) в два столбца. Учесть длину "темы".
+          TODO Выводить в алфавитном порядке сверху-вниз. Только те категории, в которых есть книги -->
       <li *ngFor="let category of categories; let i = index">
-        <a [routerLink]="'.'" [queryParams]="{category:i}">{{category}}</a>
+        <a [routerLink]="'.'" [queryParams]="{category:i}">{{category.name}}</a>
       </li>
     </ul>
   </div>
