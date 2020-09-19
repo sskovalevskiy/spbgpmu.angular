@@ -10,7 +10,7 @@
 
       <select id="authors">
         <option value="0" selected="selected">All Authors</option>
-        <option *ngFor="let author of authors; let i = index" [value]="i+1">{{author}}</option>
+        <option *ngFor="let author of authors; let i = index" [value]="i+1">{{author.name}}</option>
       </select>
 
       <input type="submit" class="button" value="Search">

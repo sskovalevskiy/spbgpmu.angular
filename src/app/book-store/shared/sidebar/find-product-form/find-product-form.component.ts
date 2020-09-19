@@ -1,6 +1,8 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Category} from "../../../services/models/category.model";
 import {CategoryService} from "../../../services/category.service";
+import {Author} from "../../../services/models/author.model";
+import {AuthorService} from "../../../services/author.service";
 
 @Component({
   selector: 'app-find-product-form',
@@ -9,21 +11,26 @@ import {CategoryService} from "../../../services/category.service";
 })
 export class FindProductFormComponent implements OnInit {
 
-  @Input() title?: string[] = ["Find","Product"];
+  @Input() title?: string[] = ["Find", "Product"];
 
   categories: Array<Category>;
+  authors: Array<Author>;
 
-  authors: string[] = ["Thoriq Firdaus", "Tim Kadlec", "Steve Krug", "Susan Weinschenk", "Austin Kleon", "Ellen Lupton",
-    "Patrick McNeil", "Brian Miller", "Kyle Simpson","Nicholas C. Zakas"]
-
-  constructor(private categoryService: CategoryService) {}
+  constructor(private categoryService: CategoryService,
+              private authorService: AuthorService) {
+  }
 
   ngOnInit() {
     this.getCategories().catch(err => console.log(err));
+    this.getAuthors().catch(err => console.log(err));
   }
 
-  private async getCategories(){
+  private async getCategories() {
     this.categories = await this.categoryService.getCategories();
+  }
+
+  private async getAuthors() {
+    this.authors = await this.authorService.getAuthors();
   }
 
 }
