@@ -1,0 +1,9 @@
+nav{
+  border-bottom: 1px solid black;
+}
+.current {
+  font-size: large;
+}
+ul.pagination>span {
+  margin-right: 1rem;
+}

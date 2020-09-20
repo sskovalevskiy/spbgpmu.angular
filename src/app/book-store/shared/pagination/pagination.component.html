@@ -1,0 +1,18 @@
+<nav class="col-md-9">
+  <ul class="pagination">
+    <a href="" class="prev page-numbers" (click)="selectPage(currentPage - 1, $event)">Previous</a>
+    <span>Showing 1–9 of {{size}} results</span>
+    <li class="page-numbers disabled" (click)="cancelEvent($event)" *ngIf="(currentPage - range) > 1">
+      <a href="" (click)="selectPage(currentPage - 1, $event)">...</a>
+    </li>
+    <li class="page-numbers" routerLinkActive="current" *ngFor="let page of pages | async" [class.current]="page == currentPage">
+      <a href="" (click)="selectPage(page, $event)">
+        {{page}}
+      </a>
+    </li>
+    <li class="page-numbers disabled" (click)="cancelEvent($event)" *ngIf="(currentPage + range) < totalPages">
+      <a href="" (click)="selectPage(currentPage + 1, $event)">...</a>
+    </li>
+    <a href="" class="next page-numbers" (click)="selectPage(currentPage + 1, $event)">Next</a>
+  </ul>
+</nav>

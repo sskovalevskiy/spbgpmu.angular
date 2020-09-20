@@ -30,6 +30,7 @@ import {ProductsComponent} from './shared/sidebar/products/products.component';
 import {FindProductFormComponent} from './shared/sidebar/find-product-form/find-product-form.component';
 import {SearchFormComponent} from "./shared/sidebar/search-form/search-form.component";
 import {BookService} from "./services/book.service";
+import {PaginationComponent} from './shared/pagination/pagination.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +60,8 @@ import {BookService} from "./services/book.service";
     ProductCategoriesComponent,
     ProductsComponent,
     FindProductFormComponent,
-    SearchFormComponent
+    SearchFormComponent,
+    PaginationComponent
   ],
   imports: [
     CommonModule,
